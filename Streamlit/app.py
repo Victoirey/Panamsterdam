@@ -10,8 +10,8 @@ from PIL import Image
 
 st.set_page_config(page_title="#panamsterdam", page_icon=":bike:", layout="wide")
 
-image = Image.open(r'C:\Users\Administrateur\Ironhack\LAB\DAFT_212\Final_project\Panamsterdam.png')
-st.image(image, use_column_width=True, width=500)
+#image = Image.open(r'C:\Users\Administrateur\Documents\GitHub\Final_Project\Streamlit\Panamsterdam.png')
+#st.image(image, use_column_width=True, width=500)
 st.markdown(
 "<h1 style='text-align: center'>"
 "<strong>The bike revolution in Paris (2018-2024):</strong>"
