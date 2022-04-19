@@ -3,3 +3,6 @@ pandas
 numpy 
 matplotlib 
 seaborn
+matplotlib.pyplot
+PIL
+scipy
