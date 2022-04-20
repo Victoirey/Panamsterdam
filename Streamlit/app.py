@@ -51,12 +51,36 @@ st.sidebar.write(
 
 
 
+if select_page == page1:
+    st.markdown(
+    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
+
+elif select_page == page2:
+    st.markdown(
+    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
+
+elif select_page == page3:
+    st.markdown(
+    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
+
+elif select_page == page4:
+    st.markdown(
+    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
+
+elif select_page == page5:
+    st.markdown(
+    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
+
+elif select_page == page6:
+    st.markdown(
+    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
+
+elif select_page == page7:
+    st.markdown(
+    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
 
 
 
-
-#<iframe src="https://public.tableau.com/authoring/Bikeaccidentmap/Bikeaccidentsmap"
- #width="645" height="955"></iframe>
 
 
 import streamlit.components.v1 as components
