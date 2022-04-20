@@ -62,7 +62,7 @@ elif select_page == page2:
         components.html(html_temp, width=1000, height=800)
     if __name__ == "__main__":    
         main()
-    
+    st.markdown("coucou")
 # Cycling paths
     image = Image.open("images/Cycling_paths.PNG")
     st.image(image, width =800)
