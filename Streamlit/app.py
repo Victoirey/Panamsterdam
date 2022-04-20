@@ -31,6 +31,9 @@ page7 = "Is Paris municipality giving itself the means to achieve its ambitions?
 pages = [page1, page2, page3, page4, page5, page6, page7]
 select_page = st.sidebar.radio("", pages)
 
+st.sidebar.write(" ") 
+st.sidebar.write(" ")
+st.sidebar.write(" ")
 st.sidebar.write(" ")
 st.sidebar.write(" ")
 st.sidebar.write(" ")
