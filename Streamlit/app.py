@@ -75,7 +75,7 @@ elif select_page == page2:
         var divElement = document.getElementById('viz1650469374490');                    
         var vizElement = divElement.getElementsByTagName('object')[0]; 
         vizElement.style.width = '100%';        
-        vizElement.style.height = '100%';                   
+        vizElement.style.height = '1000px';                   
         var scriptElement = document.createElement('script');                    
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
         vizElement.parentNode.insertBefore(scriptElement, vizElement);                
@@ -84,9 +84,16 @@ elif select_page == page2:
     if __name__ == "__main__":    
         main()
     st.markdown("coucou")
-    st.components.v1.html
 
-    
+# =============================================================================
+#     if ( divElement.offsetWidth > 800 ) 
+#     { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+#     else if ( divElement.offsetWidth > 500 ) 
+#     { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+#     else { vizElement.style.width='100%';vizElement.style.height='727px';}  
+# =============================================================================
+
+
     
 # =============================================================================
 #     st.markdown(
