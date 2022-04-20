@@ -64,7 +64,7 @@ elif select_page == page2:
         main()
     
 # Cycling paths
-    image = Image.open("images/Cycling_paths.png")
+    image = Image.open("images/Cycling_paths.PNG")
     st.image(image)
     
     st.markdown("coucou")
