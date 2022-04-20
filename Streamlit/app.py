@@ -88,7 +88,7 @@ elif select_page == page2:
         
     st.markdown("coucou")
 
-      
+     ##### 
 
 #vizElement.style.width = '1000px';        
 #vizElement.style.height = '827px';
