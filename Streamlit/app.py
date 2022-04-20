@@ -52,8 +52,7 @@ st.sidebar.write(
 
 
 if select_page == page1:
-    st.markdown(
-    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
+    st.markdown("coucou")
 
 elif select_page == page2:
     st.markdown(
