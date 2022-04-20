@@ -119,25 +119,23 @@ elif select_page == page4:
 ###############################################################################
 elif select_page == page5:
     st.subheader("Correlation between variables")
-    st.markdown(
-    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
-
+    
+    
+    
 ###############################################################################
 ############### PAGE 6 - USERS' PERCEPTION ####################################
 ###############################################################################
 elif select_page == page6:
     st.subheader("Users' perception")
-    st.markdown(
-    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
-
+    
+    
+    
 ###############################################################################
 ############### PAGE 7 - CONCLUSIONS OF PROJECT ###############################
 ###############################################################################
 elif select_page == page7:
     st.subheader("Is Paris municipality giving itself the means to achieve its ambitions?")
-    st.markdown(
-    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
-
+    
 
 
 
