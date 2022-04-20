@@ -73,16 +73,16 @@ elif select_page == page2:
         </object></div>                <script type='text/javascript'>                    
         var divElement = document.getElementById('viz1650469374490');                    
         var vizElement = divElement.getElementsByTagName('object')[0]; 
-        if ( divElement.offsetWidth > 8000 ) 
-        { vizElement.style.width='1000px';vizElement.style.height='1000px';} 
+        if ( divElement.offsetWidth > 800 ) 
+        { vizElement.style.width='1000px';vizElement.style.height='827px';} 
         else if ( divElement.offsetWidth > 5000 ) 
-        { vizElement.style.width='1000px';vizElement.style.height='1000px';} 
+        { vizElement.style.width='1000px';vizElement.style.height='827px';} 
         else { vizElement.style.width='100%';vizElement.style.height='1000px';}                   
         var scriptElement = document.createElement('script');                    
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
         vizElement.parentNode.insertBefore(scriptElement, vizElement);                
         </script>"""
-        components.html(html_temp, width=1000, height=600)
+        components.html(html_temp, width=800, height=400)
     if __name__ == "__main__":    
         main()
     st.markdown("coucou")
