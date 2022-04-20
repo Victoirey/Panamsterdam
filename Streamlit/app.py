@@ -6,6 +6,7 @@ import seaborn as sns
 import matplotlib as mpl
 from scipy import stats
 from PIL import Image
+import streamlit.components.v1 as components
 
 
 st.set_page_config(page_title="#panamsterdam", page_icon=":bike:", layout="wide")
@@ -66,8 +67,8 @@ elif select_page == page4:
     st.markdown(
     "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
 
-    import streamlit.components.v1 as components
-    def main():
+    
+    def accident_map():
         html_temp = """<div class='tableauPlaceholder' id='viz1650300467898' style='position: relative'><noscript><a href='#'><img alt='Bike accidents map - 2020 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;Panamsterdam_accidents2017_2020&#47;Bikeaccidentsmap&#47;1_rss.png' style='border: none' /></a></noscript><object allowfullscreen="true" class='tableauViz'  style='display:none;'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
         <param name='embed_code_version' value='3' /> 
@@ -90,8 +91,8 @@ elif select_page == page4:
         var scriptElement = document.createElement('script');                    
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
         components.html(html_temp, width=1000, height=500)
-    if __name__ == "__main__":    
-        main()
+    if __name__ == "__accident_map__":    
+        accident_map()
 elif select_page == page5:
     st.markdown(
     "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
