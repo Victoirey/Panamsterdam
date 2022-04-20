@@ -56,8 +56,12 @@ if select_page == page1:
     st.markdown("coucou")
 
 elif select_page == page2:
-    st.markdown(
-    "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
+    st.markdown("Cycling path - map", unsafe_allow_html=True)
+    <iframe id="inlineFrameExample"
+    width="300"
+    height="200"
+    src="https://public.tableau.com/views/CyclingpathsParis/Tableaudebord1?:language=fr-FR&publish=yes&:display_count=n&:origin=viz_share_link">
+</iframe>
 
 elif select_page == page3:
     st.markdown(
@@ -67,8 +71,7 @@ elif select_page == page4:
     st.markdown(
     "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
 
-    
-    def accident_map():
+    def main():
         html_temp = """<div class='tableauPlaceholder' id='viz1650300467898' style='position: relative'><noscript><a href='#'><img alt='Bike accidents map - 2020 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;Panamsterdam_accidents2017_2020&#47;Bikeaccidentsmap&#47;1_rss.png' style='border: none' /></a></noscript><object allowfullscreen="true" class='tableauViz'  style='display:none;'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
         <param name='embed_code_version' value='3' /> 
@@ -91,8 +94,8 @@ elif select_page == page4:
         var scriptElement = document.createElement('script');                    
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
         components.html(html_temp, width=1000, height=500)
-    if __name__ == "__accident_map__":    
-        accident_map()
+    if __name__ == "__main__":    
+        main()
 elif select_page == page5:
     st.markdown(
     "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
