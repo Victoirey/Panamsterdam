@@ -73,6 +73,8 @@ elif select_page == page2:
 elif select_page == page3:
     st.subheader("Traffic overview")
     st.markdown(" ")
+    st.components.v1.html("""<div class='tableauPlaceholder' id='viz1650484554609' style='position: relative'><noscript><a href='#'><img alt='Tableau de bord 5 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompteursVeloParis&#47;Tableaudebord5&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CompteursVeloParis&#47;Tableaudebord5' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompteursVeloParis&#47;Tableaudebord5&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1650484554609');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='527px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>""", 
+                          width=1000, height=450)
     
     
 ###############################################################################
@@ -80,38 +82,16 @@ elif select_page == page3:
 ###############################################################################
 elif select_page == page4:
     st.subheader("Accident overview")
-    st.markdown(" ")
-    def main():
-        html_temp = """<div class='tableauPlaceholder' id='viz1650300467898' style='position: relative'><noscript><a href='#'><img alt='Bike accidents map - 2020 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;Panamsterdam_accidents2017_2020&#47;Bikeaccidentsmap&#47;1_rss.png' style='border: none' /></a></noscript><object allowfullscreen="true" class='tableauViz'  style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-        <param name='embed_code_version' value='3' /> 
-        <param name='site_root' value='' />
-        <param name='name' value='Panamsterdam_accidents2017_2020&#47;Bikeaccidentsmap' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;Panamsterdam_accidents2017_2020&#47;Bikeaccidentsmap&#47;1.png' /> 
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='fr-FR' />
-        <param name='filter' value='publish=yes' /></object></div>                
-        <script type='text/javascript'>                    
-        var divElement = document.getElementById('viz1650300467898');                    
-        var vizElement = divElement.getElementsByTagName('object')[0];                    
-    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-        var scriptElement = document.createElement('script');                    
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
-        components.html(html_temp, width=1000, height=500)
-    if __name__ == "__main__":    
-        main()
- # Bike accidents peak hours       
-        st.markdown("coucou")
-        st.components.v1.html("""<div class='tableauPlaceholder' id='viz1650484051815' style='position: relative'><noscript><a href='#'><img alt='Tableau de bord 4 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompteursVeloParis&#47;Tableaudebord4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CompteursVeloParis&#47;Tableaudebord4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompteursVeloParis&#47;Tableaudebord4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1650484051815');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='477px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='477px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>""", 
+    st.markdown("coucou")
+    st.components.v1.html("""<div class='tableauPlaceholder' id='viz1650484051815' style='position: relative'><noscript><a href='#'><img alt='Tableau de bord 4 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompteursVeloParis&#47;Tableaudebord4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CompteursVeloParis&#47;Tableaudebord4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompteursVeloParis&#47;Tableaudebord4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1650484051815');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='477px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='477px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>""", 
+                          width=1000, height=450)
+    
+ # Bike accidents peak hours
+
+    st.markdown("coucou")
+    st.components.v1.html("""<div class='tableauPlaceholder' id='viz1650484051815' style='position: relative'><noscript><a href='#'><img alt='Tableau de bord 4 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompteursVeloParis&#47;Tableaudebord4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CompteursVeloParis&#47;Tableaudebord4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompteursVeloParis&#47;Tableaudebord4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1650484051815');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='477px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='477px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>""", 
                               width=1000, height=450)
-        st.markdown("coucou")
+    st.markdown("coucou")
     
         
 ###############################################################################
