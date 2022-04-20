@@ -64,7 +64,7 @@ elif select_page == page2:
         main()
     
 # Cycling paths
-    image = Image.open(r'C:\Users\Administrateur\Ironhack\LAB\DAFT_212\Final_project\Image pour streamlit\Cycling_paths.jpg')
+    image = Image.open(r'C:\Users\Administrateur\Documents\GitHub\Final_Project\Streamlit\Image\Cycling_paths.jpg')
     st.image(image)
     
     st.markdown("coucou")
