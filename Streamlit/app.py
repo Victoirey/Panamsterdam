@@ -82,7 +82,7 @@ elif select_page == page2:
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
         vizElement.parentNode.insertBefore(scriptElement, vizElement);                
         </script>"""
-        components.html(html_temp, width=800, height=400, zoom=None)
+        components.html(html_temp, width=1000, height=800)
     if __name__ == "__main__":    
         main()
         
