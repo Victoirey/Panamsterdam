@@ -62,7 +62,11 @@ elif select_page == page2:
         components.html(html_temp, width=1000, height=800)
     if __name__ == "__main__":    
         main()
-        
+    
+# Cycling paths
+    image = Image.open(r'C:\Users\Administrateur\Ironhack\LAB\DAFT_212\Final_project\Image pour streamlit\Cycling_paths.jpg')
+    st.image(image)
+    
     st.markdown("coucou")
 
      ##### 
