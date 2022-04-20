@@ -57,7 +57,6 @@ if select_page == page1:
 elif select_page == page2:
     st.subheader("Infrastructure overview")
 # Cycling path map  
-    st.container()  
     def main():
         html_temp = """<div class='tableauPlaceholder' id='viz1650469374490' style='position: relative'><noscript><a href='#'><img alt='Tableau de bord 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cy&#47;CyclingpathsParis&#47;Tableaudebord1&#47;1_rss.png' style='border: none' /></a></noscript>
         <object class='tableauViz'  style='display:none;'>
@@ -78,7 +77,7 @@ elif select_page == page2:
         { vizElement.style.width='1000px';vizElement.style.height='1000px';} 
         else if ( divElement.offsetWidth > 5000 ) 
         { vizElement.style.width='1000px';vizElement.style.height='1000px';} 
-        else { vizElement.style.width='1000px';vizElement.style.height='827px';}                   
+        else { vizElement.style.width='100%';vizElement.style.height='1000px';}                   
         var scriptElement = document.createElement('script');                    
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
         vizElement.parentNode.insertBefore(scriptElement, vizElement);                
