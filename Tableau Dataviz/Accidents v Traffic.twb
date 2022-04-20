@@ -1,0 +1,2443 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='C2017++ (Correlations)' inline='true' name='federated.1ur5xa012pqz4z13lrrnn18p0k18' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Correlations' name='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/olivi/Documents/Ironhack/IRONLABS_OM/Bike mobility in Paris/Correlations.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='Acc_C' table='[Acc_C$]' type='table'>
+          <columns gridOrigin='A1:I10001:no:A1:I2147483647:0' header='yes' outcome='2'>
+            <column datatype='string' name='num_acc' ordinal='0' />
+            <column datatype='datetime' name='acc_datehour' ordinal='1' />
+            <column datatype='date' name='acc_date' ordinal='2' />
+            <column datatype='integer' name='hour' ordinal='3' />
+            <column datatype='integer' name='dept' ordinal='4' />
+            <column datatype='string' name='arrt' ordinal='5' />
+            <column datatype='integer' name='intersection' ordinal='6' />
+            <column datatype='real' name='latitude' ordinal='7' />
+            <column datatype='real' name='longitude' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='Acc_C' table='[Acc_C$]' type='table'>
+            <columns gridOrigin='A1:I10001:no:A1:I2147483647:0' header='yes' outcome='2'>
+              <column datatype='string' name='num_acc' ordinal='0' />
+              <column datatype='datetime' name='acc_datehour' ordinal='1' />
+              <column datatype='date' name='acc_date' ordinal='2' />
+              <column datatype='integer' name='hour' ordinal='3' />
+              <column datatype='integer' name='dept' ordinal='4' />
+              <column datatype='string' name='arrt' ordinal='5' />
+              <column datatype='integer' name='intersection' ordinal='6' />
+              <column datatype='real' name='latitude' ordinal='7' />
+              <column datatype='real' name='longitude' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='Acc_L' table='[Acc_L$]' type='table'>
+            <columns gridOrigin='A1:B10001:no:A1:B2147483647:0' header='yes' outcome='6'>
+              <column datatype='string' name='num_acc' ordinal='0' />
+              <column datatype='integer' name='surface' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='Acc_U' table='[Acc_U$]' type='table'>
+            <columns gridOrigin='A1:D10001:no:A1:D2147483647:0' header='yes' outcome='6'>
+              <column datatype='string' name='num_acc' ordinal='0' />
+              <column datatype='integer' name='grav' ordinal='1' />
+              <column datatype='integer' name='sexe' ordinal='2' />
+              <column datatype='integer' name='an_nais' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='Acc_V' table='[Acc_V$]' type='table'>
+            <columns gridOrigin='A1:C10001:no:A1:C2147483647:0' header='yes' outcome='6'>
+              <column datatype='string' name='num_acc' ordinal='0' />
+              <column datatype='integer' name='catv' ordinal='1' />
+              <column datatype='integer' name='obsm' ordinal='2' />
+            </columns>
+          </relation>
+          <relation all='true' name='COMPT2018+' type='union'>
+            <columns header='yes'>
+              <column datatype='integer' name='F1' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd&apos;T&apos;HH:mm:ssZZZZZ' name='date_heure_comptage' />
+              <column datatype='integer' name='comptage_horaire' />
+              <column datatype='string' name='compteur_id' />
+              <column datatype='string' name='compteur_name' />
+              <column datatype='string' name='site_compteur_id' />
+              <column datatype='date' name='date_instal' />
+              <column datatype='date' name='date_comptage' />
+              <column datatype='integer' name='heure_comptage' />
+              <column datatype='real' name='latitude' />
+              <column datatype='real' name='longitude' />
+              <column datatype='string' name='Sheet' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='COMPT2018' table='[COMPT2018$]' type='table'>
+              <columns gridOrigin='A1:K10001:no:A1:K2147483647:0' header='yes' outcome='6'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='datetime' date-parse-format='yyyy-MM-dd&apos;T&apos;HH:mm:ssZZZZZ' name='date_heure_comptage' ordinal='1' />
+                <column datatype='string' name='comptage_horaire' ordinal='2' />
+                <column datatype='integer' name='compteur_id' ordinal='3' />
+                <column datatype='integer' name='compteur_name' ordinal='4' />
+                <column datatype='string' name='site_compteur_id' ordinal='5' />
+                <column datatype='date' name='date_instal' ordinal='6' />
+                <column datatype='date' name='date_comptage' ordinal='7' />
+                <column datatype='integer' name='heure_comptage' ordinal='8' />
+                <column datatype='real' name='latitude' ordinal='9' />
+                <column datatype='real' name='longitude' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='COMPT2019' table='[COMPT2019$]' type='table'>
+              <columns gridOrigin='A1:K10001:no:A1:K2147483647:0' header='yes' outcome='6'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='date_heure_comptage' ordinal='1' />
+                <column datatype='integer' name='comptage_horaire' ordinal='2' />
+                <column datatype='string' name='compteur_id' ordinal='3' />
+                <column datatype='string' name='compteur_name' ordinal='4' />
+                <column datatype='string' name='site_compteur_id' ordinal='5' />
+                <column datatype='date' name='date_instal' ordinal='6' />
+                <column datatype='date' name='date_comptage' ordinal='7' />
+                <column datatype='integer' name='heure_comptage' ordinal='8' />
+                <column datatype='real' name='latitude' ordinal='9' />
+                <column datatype='real' name='longitude' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='COMPT2020' table='[COMPT2020$]' type='table'>
+              <columns gridOrigin='A1:K10001:no:A1:K2147483647:0' header='yes' outcome='6'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='date_heure_comptage' ordinal='1' />
+                <column datatype='integer' name='comptage_horaire' ordinal='2' />
+                <column datatype='string' name='compteur_id' ordinal='3' />
+                <column datatype='string' name='compteur_name' ordinal='4' />
+                <column datatype='string' name='site_compteur_id' ordinal='5' />
+                <column datatype='date' name='date_instal' ordinal='6' />
+                <column datatype='date' name='date_comptage' ordinal='7' />
+                <column datatype='integer' name='heure_comptage' ordinal='8' />
+                <column datatype='real' name='latitude' ordinal='9' />
+                <column datatype='real' name='longitude' ordinal='10' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='METEO' table='[METEO$]' type='table'>
+            <columns gridOrigin='A1:K10001:no:A1:K2147483647:0' header='yes' outcome='2'>
+              <column datatype='integer' name='ID OMM station' ordinal='0' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd&apos;T&apos;HH:mm:ssZZZZZ' name='Meteo_DateHour' ordinal='1' />
+              <column datatype='integer' name='Direction du vent moyen 10 mn' ordinal='2' />
+              <column datatype='string' name='Vitesse du vent moyen 10 mn' ordinal='3' />
+              <column datatype='string' name='Pression station' ordinal='4' />
+              <column datatype='string' name='Variation de pression en 24 heures' ordinal='5' />
+              <column datatype='string' name='Hauteur totale de la couche' ordinal='6' />
+              <column datatype='real' name='Precipitations dans la derniere heure' ordinal='7' />
+              <column datatype='real' name='Temp (°C)' ordinal='8' />
+              <column datatype='real' name='Latitude' ordinal='9' />
+              <column datatype='real' name='Longitude' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='CYNET' table='[CYNET$]' type='table'>
+            <columns gridOrigin='A1:J10001:no:A1:J2147483647:0' header='yes' outcome='6'>
+              <column datatype='datetime' name='delivery datehour' ordinal='0' />
+              <column datatype='string' name='geo_shape' ordinal='1' />
+              <column datatype='string' name='geo_point_2d' ordinal='2' />
+              <column datatype='string' name='infra type' ordinal='3' />
+              <column datatype='string' name='2-way' ordinal='4' />
+              <column datatype='string' name='sens velo' ordinal='5' />
+              <column datatype='string' name='voie' ordinal='6' />
+              <column datatype='integer' name='arrt' ordinal='7' />
+              <column datatype='real' name='segment length km' ordinal='8' />
+              <column datatype='string' name='reseau cyclable' ordinal='9' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[2-way]' value='[CYNET].[2-way]' />
+          <map key='[Direction du vent moyen 10 mn]' value='[METEO].[Direction du vent moyen 10 mn]' />
+          <map key='[F1]' value='[COMPT2018+].[F1]' />
+          <map key='[Hauteur totale de la couche (METEO)]' value='[METEO].[Hauteur totale de la couche]' />
+          <map key='[ID OMM station]' value='[METEO].[ID OMM station]' />
+          <map key='[Latitude]' value='[METEO].[Latitude]' />
+          <map key='[Longitude]' value='[METEO].[Longitude]' />
+          <map key='[Meteo_DateHour]' value='[METEO].[Meteo_DateHour]' />
+          <map key='[Precipitations dans la derniere heure (METEO)]' value='[METEO].[Precipitations dans la derniere heure]' />
+          <map key='[Pression station (METEO)]' value='[METEO].[Pression station]' />
+          <map key='[Sheet]' value='[COMPT2018+].[Sheet]' />
+          <map key='[Table Name]' value='[COMPT2018+].[Table Name]' />
+          <map key='[Temp (°C) (METEO)]' value='[METEO].[Temp (°C)]' />
+          <map key='[Variation de pression en 24 heures (METEO)]' value='[METEO].[Variation de pression en 24 heures]' />
+          <map key='[Vitesse du vent moyen 10 mn (METEO)]' value='[METEO].[Vitesse du vent moyen 10 mn]' />
+          <map key='[acc_date]' value='[Acc_C].[acc_date]' />
+          <map key='[acc_datehour]' value='[Acc_C].[acc_datehour]' />
+          <map key='[an_nais]' value='[Acc_U].[an_nais]' />
+          <map key='[arrt (CYNET)]' value='[CYNET].[arrt]' />
+          <map key='[arrt]' value='[Acc_C].[arrt]' />
+          <map key='[catv]' value='[Acc_V].[catv]' />
+          <map key='[comptage_horaire]' value='[COMPT2018+].[comptage_horaire]' />
+          <map key='[compteur_id]' value='[COMPT2018+].[compteur_id]' />
+          <map key='[compteur_name]' value='[COMPT2018+].[compteur_name]' />
+          <map key='[date_comptage]' value='[COMPT2018+].[date_comptage]' />
+          <map key='[date_heure_comptage]' value='[COMPT2018+].[date_heure_comptage]' />
+          <map key='[date_instal]' value='[COMPT2018+].[date_instal]' />
+          <map key='[delivery datehour]' value='[CYNET].[delivery datehour]' />
+          <map key='[dept]' value='[Acc_C].[dept]' />
+          <map key='[geo_point_2d]' value='[CYNET].[geo_point_2d]' />
+          <map key='[geo_shape]' value='[CYNET].[geo_shape]' />
+          <map key='[grav]' value='[Acc_U].[grav]' />
+          <map key='[heure_comptage]' value='[COMPT2018+].[heure_comptage]' />
+          <map key='[hour]' value='[Acc_C].[hour]' />
+          <map key='[infra type]' value='[CYNET].[infra type]' />
+          <map key='[intersection]' value='[Acc_C].[intersection]' />
+          <map key='[latitude (COMPT2018+)]' value='[COMPT2018+].[latitude]' />
+          <map key='[latitude]' value='[Acc_C].[latitude]' />
+          <map key='[longitude (COMPT2018+)]' value='[COMPT2018+].[longitude]' />
+          <map key='[longitude]' value='[Acc_C].[longitude]' />
+          <map key='[num_acc (Acc!L)]' value='[Acc_L].[num_acc]' />
+          <map key='[num_acc (Acc!U)]' value='[Acc_U].[num_acc]' />
+          <map key='[num_acc (Acc!V)]' value='[Acc_V].[num_acc]' />
+          <map key='[num_acc]' value='[Acc_C].[num_acc]' />
+          <map key='[obsm]' value='[Acc_V].[obsm]' />
+          <map key='[reseau cyclable]' value='[CYNET].[reseau cyclable]' />
+          <map key='[segment length km]' value='[CYNET].[segment length km]' />
+          <map key='[sens velo]' value='[CYNET].[sens velo]' />
+          <map key='[sexe]' value='[Acc_U].[sexe]' />
+          <map key='[site_compteur_id]' value='[COMPT2018+].[site_compteur_id]' />
+          <map key='[surface]' value='[Acc_L].[surface]' />
+          <map key='[voie]' value='[CYNET].[voie]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Acc_C]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>4</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I10001:no:A1:I2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Acc_L]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B10001:no:A1:B2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Acc_U]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D10001:no:A1:D2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Acc_V]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C10001:no:A1:C2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K10001:no:A1:K2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CYNET]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J10001:no:A1:J2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_acc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[num_acc]</local-name>
+            <parent-name>[Acc_C]</parent-name>
+            <remote-alias>num_acc</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>acc_datehour</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[acc_datehour]</local-name>
+            <parent-name>[Acc_C]</parent-name>
+            <remote-alias>acc_datehour</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>acc_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[acc_date]</local-name>
+            <parent-name>[Acc_C]</parent-name>
+            <remote-alias>acc_date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour]</local-name>
+            <parent-name>[Acc_C]</parent-name>
+            <remote-alias>hour</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dept</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dept]</local-name>
+            <parent-name>[Acc_C]</parent-name>
+            <remote-alias>dept</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrt</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[arrt]</local-name>
+            <parent-name>[Acc_C]</parent-name>
+            <remote-alias>arrt</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>intersection</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[intersection]</local-name>
+            <parent-name>[Acc_C]</parent-name>
+            <remote-alias>intersection</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[Acc_C]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[Acc_C]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_acc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[num_acc (Acc!L)]</local-name>
+            <parent-name>[Acc_L]</parent-name>
+            <remote-alias>num_acc</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!L_F152F32E5D20484BAF87B52CE5B1D0B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>surface</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[surface]</local-name>
+            <parent-name>[Acc_L]</parent-name>
+            <remote-alias>surface</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!L_F152F32E5D20484BAF87B52CE5B1D0B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_acc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[num_acc (Acc!U)]</local-name>
+            <parent-name>[Acc_U]</parent-name>
+            <remote-alias>num_acc</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!U_32AF4A8352554BF190FB4D6DD9D2D96B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grav</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[grav]</local-name>
+            <parent-name>[Acc_U]</parent-name>
+            <remote-alias>grav</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!U_32AF4A8352554BF190FB4D6DD9D2D96B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sexe</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sexe]</local-name>
+            <parent-name>[Acc_U]</parent-name>
+            <remote-alias>sexe</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!U_32AF4A8352554BF190FB4D6DD9D2D96B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>an_nais</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[an_nais]</local-name>
+            <parent-name>[Acc_U]</parent-name>
+            <remote-alias>an_nais</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!U_32AF4A8352554BF190FB4D6DD9D2D96B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_acc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[num_acc (Acc!V)]</local-name>
+            <parent-name>[Acc_V]</parent-name>
+            <remote-alias>num_acc</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!V_ED8775AF3F9441EAA32194FBDE4CC540]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>catv</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[catv]</local-name>
+            <parent-name>[Acc_V]</parent-name>
+            <remote-alias>catv</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!V_ED8775AF3F9441EAA32194FBDE4CC540]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>obsm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[obsm]</local-name>
+            <parent-name>[Acc_V]</parent-name>
+            <remote-alias>obsm</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acc!V_ED8775AF3F9441EAA32194FBDE4CC540]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_heure_comptage</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_heure_comptage]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>date_heure_comptage</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comptage_horaire</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comptage_horaire]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>comptage_horaire</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>compteur_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[compteur_id]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>compteur_id</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>compteur_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[compteur_name]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>compteur_name</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>site_compteur_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[site_compteur_id]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>site_compteur_id</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_instal</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_instal]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>date_instal</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_comptage</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_comptage]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>date_comptage</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>heure_comptage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[heure_comptage]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>heure_comptage</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude (COMPT2018+)]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude (COMPT2018+)]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[COMPT2018+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID OMM station</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID OMM station]</local-name>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias>ID OMM station</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[METEO_F420C48D092F4238AF49112D71494059]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Meteo_DateHour</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Meteo_DateHour]</local-name>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias>Meteo_DateHour</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[METEO_F420C48D092F4238AF49112D71494059]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Direction du vent moyen 10 mn</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Direction du vent moyen 10 mn]</local-name>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias>Direction du vent moyen 10 mn</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[METEO_F420C48D092F4238AF49112D71494059]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vitesse du vent moyen 10 mn</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vitesse du vent moyen 10 mn (METEO)]</local-name>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias>Vitesse du vent moyen 10 mn</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[METEO_F420C48D092F4238AF49112D71494059]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pression station</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Pression station (METEO)]</local-name>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias>Pression station</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[METEO_F420C48D092F4238AF49112D71494059]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation de pression en 24 heures</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Variation de pression en 24 heures (METEO)]</local-name>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias>Variation de pression en 24 heures</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[METEO_F420C48D092F4238AF49112D71494059]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hauteur totale de la couche</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Hauteur totale de la couche (METEO)]</local-name>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias>Hauteur totale de la couche</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[METEO_F420C48D092F4238AF49112D71494059]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Precipitations dans la derniere heure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Precipitations dans la derniere heure (METEO)]</local-name>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias>Precipitations dans la derniere heure</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[METEO_F420C48D092F4238AF49112D71494059]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temp (°C)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temp (°C) (METEO)]</local-name>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias>Temp (°C)</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[METEO_F420C48D092F4238AF49112D71494059]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[METEO_F420C48D092F4238AF49112D71494059]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[METEO]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[METEO_F420C48D092F4238AF49112D71494059]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery datehour</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[delivery datehour]</local-name>
+            <parent-name>[CYNET]</parent-name>
+            <remote-alias>delivery datehour</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CYNET_57C7ED42D3854F2690E45C54BD28F863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo_shape</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[geo_shape]</local-name>
+            <parent-name>[CYNET]</parent-name>
+            <remote-alias>geo_shape</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CYNET_57C7ED42D3854F2690E45C54BD28F863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo_point_2d</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[geo_point_2d]</local-name>
+            <parent-name>[CYNET]</parent-name>
+            <remote-alias>geo_point_2d</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CYNET_57C7ED42D3854F2690E45C54BD28F863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>infra type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[infra type]</local-name>
+            <parent-name>[CYNET]</parent-name>
+            <remote-alias>infra type</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CYNET_57C7ED42D3854F2690E45C54BD28F863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2-way</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[2-way]</local-name>
+            <parent-name>[CYNET]</parent-name>
+            <remote-alias>2-way</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CYNET_57C7ED42D3854F2690E45C54BD28F863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sens velo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sens velo]</local-name>
+            <parent-name>[CYNET]</parent-name>
+            <remote-alias>sens velo</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CYNET_57C7ED42D3854F2690E45C54BD28F863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voie</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[voie]</local-name>
+            <parent-name>[CYNET]</parent-name>
+            <remote-alias>voie</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CYNET_57C7ED42D3854F2690E45C54BD28F863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrt (CYNET)]</local-name>
+            <parent-name>[CYNET]</parent-name>
+            <remote-alias>arrt</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CYNET_57C7ED42D3854F2690E45C54BD28F863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>segment length km</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[segment length km]</local-name>
+            <parent-name>[CYNET]</parent-name>
+            <remote-alias>segment length km</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CYNET_57C7ED42D3854F2690E45C54BD28F863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reseau cyclable</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[reseau cyclable]</local-name>
+            <parent-name>[CYNET]</parent-name>
+            <remote-alias>reseau cyclable</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CYNET_57C7ED42D3854F2690E45C54BD28F863]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='2-Way' datatype='string' name='[2-way]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude1' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude1' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Cycling network length (km)' datatype='real' name='[Longueur du tronÃ§on en km]' role='measure' type='quantitative' />
+      <column caption='Meteo DateHour' datatype='datetime' name='[Meteo_DateHour]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Num_Acc]' role='measure' type='quantitative' />
+      <column aggregation='CountD' datatype='real' name='[Precipitations dans la derniere heure (METEO)]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[Temp (°C) (METEO)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Acc_C' datatype='table' name='[__tableau_internal_object_id__].[Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Acc_L' datatype='table' name='[__tableau_internal_object_id__].[Acc!L_F152F32E5D20484BAF87B52CE5B1D0B5]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Acc_U' datatype='table' name='[__tableau_internal_object_id__].[Acc!U_32AF4A8352554BF190FB4D6DD9D2D96B]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Acc_V' datatype='table' name='[__tableau_internal_object_id__].[Acc!V_ED8775AF3F9441EAA32194FBDE4CC540]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='COMPT2018' datatype='table' name='[__tableau_internal_object_id__].[COMPT2018_BD12F48BD95D4652B8752A1688856CDB]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='CYNET' datatype='table' name='[__tableau_internal_object_id__].[CYNET_57C7ED42D3854F2690E45C54BD28F863]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='METEO' datatype='table' name='[__tableau_internal_object_id__].[METEO_F420C48D092F4238AF49112D71494059]' role='measure' type='quantitative' />
+      <column caption='Acc Date' datatype='date' name='[acc_date]' role='dimension' type='ordinal' />
+      <column caption='Acc Datehour' datatype='datetime' name='[acc_datehour]' role='dimension' type='ordinal' />
+      <column caption='An Nais' datatype='integer' name='[an_nais]' role='measure' type='quantitative' />
+      <column caption='Arrt' datatype='string' name='[arrt]' role='dimension' type='nominal' />
+      <column caption='Catv' datatype='integer' name='[catv]' role='measure' type='quantitative' />
+      <column caption='Comptage Horaire' datatype='integer' name='[comptage_horaire]' role='measure' type='quantitative' />
+      <column caption='Compteur Id' datatype='string' name='[compteur_id]' role='dimension' type='nominal' />
+      <column caption='Compteur Name' datatype='string' name='[compteur_name]' role='dimension' type='nominal' />
+      <column caption='Date Comptage' datatype='date' name='[date_comptage]' role='dimension' type='ordinal' />
+      <column caption='Date Heure Comptage' datatype='datetime' name='[date_heure_comptage]' role='dimension' type='ordinal' />
+      <column caption='Date Instal' datatype='date' name='[date_instal]' role='dimension' type='ordinal' />
+      <column caption='Delivery Datehour' datatype='datetime' name='[delivery datehour]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Departement' datatype='integer' name='[dep]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Dept' datatype='integer' name='[dept]' role='dimension' type='ordinal' />
+      <column caption='Geo Point 2D' datatype='string' name='[geo_point_2d]' role='dimension' type='nominal' />
+      <column caption='Geo Shape' datatype='string' name='[geo_shape]' role='dimension' type='nominal' />
+      <column caption='Grav' datatype='integer' name='[grav]' role='measure' type='quantitative' />
+      <column caption='Heure Comptage' datatype='integer' name='[heure_comptage]' role='measure' type='quantitative' />
+      <column caption='Hour' datatype='integer' name='[hour]' role='measure' type='quantitative' />
+      <column caption='Infra Type' datatype='string' name='[infra type]' role='dimension' type='nominal' />
+      <column caption='Intersection' datatype='integer' name='[intersection]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[latitude (COMPT2018+)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[longitude (COMPT2018+)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='num acc (Acc!L)' datatype='string' default-role='measure' default-type='quantitative' name='[num_acc (Acc!L)]' role='dimension' type='nominal' />
+      <column caption='num acc (Acc!U)' datatype='string' default-role='measure' default-type='quantitative' name='[num_acc (Acc!U)]' role='dimension' type='nominal' />
+      <column caption='num acc (Acc!V)' datatype='string' default-role='measure' default-type='quantitative' name='[num_acc (Acc!V)]' role='dimension' type='nominal' />
+      <column caption='Num Acc' datatype='string' default-role='measure' default-type='quantitative' name='[num_acc]' role='dimension' type='nominal' />
+      <column caption='Obsm' datatype='integer' name='[obsm]' role='measure' type='quantitative' />
+      <column caption='Reseau Cyclable' datatype='string' name='[reseau cyclable]' role='dimension' type='nominal' />
+      <column caption='Segment Length Km' datatype='real' name='[segment length km]' role='measure' type='ordinal' />
+      <column caption='Sens Velo' datatype='string' name='[sens velo]' role='dimension' type='nominal' />
+      <column caption='Sexe' datatype='integer' name='[sexe]' role='measure' type='quantitative' />
+      <column caption='Site Compteur Id' datatype='string' name='[site_compteur_id]' role='dimension' type='nominal' />
+      <column caption='Surface' datatype='integer' name='[surface]' role='measure' type='quantitative' />
+      <column caption='Voie' datatype='string' name='[voie]' role='dimension' type='nominal' />
+      <column-instance column='[Precipitations dans la derniere heure (METEO)]' derivation='Avg' name='[avg:Precipitations dans la derniere heure (METEO):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Temp (°C) (METEO)]' derivation='Avg' name='[avg:Temp (°C) (METEO):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[comptage_horaire]' derivation='Avg' name='[avg:comptage_horaire:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[num_acc]' derivation='Count' name='[cnt:num_acc:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Longueur du tronÃ§on en km]' derivation='Sum' name='[cum:sum:Longueur du tronÃ§on en km:qk:1]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[tmn:date_comptage:qk]' ordering-type='Field' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[Precipitations dans la derniere heure (METEO)]' derivation='Avg' name='[diff:avg:Precipitations dans la derniere heure (METEO):qk:2]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[tmn:Meteo_DateHour:qk]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Precipitations dans la derniere heure (METEO)]' derivation='Avg' name='[diff:avg:Precipitations dans la derniere heure (METEO):qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Temp (°C) (METEO)]' derivation='Avg' name='[diff:avg:Temp (°C) (METEO):qk:1]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[tmn:Meteo_DateHour:qk]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Temp (°C) (METEO)]' derivation='Avg' name='[diff:avg:Temp (°C) (METEO):qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[comptage_horaire]' derivation='Avg' name='[diff:avg:comptage_horaire:qk:1]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[tmn:Meteo_DateHour:qk]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[comptage_horaire]' derivation='Avg' name='[diff:avg:comptage_horaire:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[num_acc]' derivation='Count' name='[diff:cnt:num_acc:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Num_Acc]' derivation='CountD' name='[diff:ctd:Num_Acc:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[num_acc]' derivation='CountD' name='[diff:ctd:num_acc:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Num_Acc]' derivation='Sum' name='[diff:sum:Num_Acc:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[comptage_horaire]' derivation='Sum' name='[diff:sum:comptage_horaire:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Num_Acc]' derivation='Sum' name='[sum:Num_Acc:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[comptage_horaire]' derivation='Sum' name='[sum:comptage_horaire:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Meteo_DateHour]' derivation='Month-Trunc' name='[tmn:Meteo_DateHour:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[date_comptage]' derivation='Month-Trunc' name='[tmn:date_comptage:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]&#10;[none:Forecast Indicator:nk]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[fVal:ctd:Num_Acc:qk]&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[fVal:sum:Longueur du tronÃ§on en km:qk]&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[fVal:sum:comptage_horaire:qk]&quot;</bucket>
+            </map-pri>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' palette='orange_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:sum:Num_Acc:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[sum:Num_Acc:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[cum:sum:Longueur du tronÃ§on en km:qk:1]&quot;</bucket>
+            </map>
+            <map to='#9e3d22'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[avg:Precipitations dans la derniere heure (METEO):qk]&quot;</bucket>
+            </map>
+            <map to='#9e3d22'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk:2]&quot;</bucket>
+            </map>
+            <map to='#9e3d22'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Temp (°C) (METEO):qk:1]&quot;</bucket>
+            </map>
+            <map to='#9e3d22'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:ctd:num_acc:qk]&quot;</bucket>
+            </map>
+            <map to='#b71d3e'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[avg:Temp (°C) (METEO):qk]&quot;</bucket>
+            </map>
+            <map to='#b71d3e'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[cnt:num_acc:qk]&quot;</bucket>
+            </map>
+            <map to='#b71d3e'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:cnt:num_acc:qk]&quot;</bucket>
+            </map>
+            <map to='#b71d3e'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:sum:comptage_horaire:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[avg:comptage_horaire:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[cum:sum:comptage_horaire:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[sum:comptage_horaire:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[ctd:Num_Acc:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[cum:ctd:Num_Acc:qk]&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:ctd:Num_Acc:qk]&quot;</bucket>
+            </map>
+            <map to='#ffc685'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk:1]&quot;</bucket>
+            </map>
+            <map to='#ffc685'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk]&quot;</bucket>
+            </map>
+            <map to='#ffc685'>
+              <bucket>&quot;[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Temp (°C) (METEO):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;FR&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Réel&quot;</bucket>
+            <bucket>&quot;Estimation&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Acc_C' id='Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC'>
+            <properties context=''>
+              <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='Acc_C' table='[Acc_C$]' type='table'>
+                <columns gridOrigin='A1:I10001:no:A1:I2147483647:0' header='yes' outcome='2'>
+                  <column datatype='string' name='num_acc' ordinal='0' />
+                  <column datatype='datetime' name='acc_datehour' ordinal='1' />
+                  <column datatype='date' name='acc_date' ordinal='2' />
+                  <column datatype='integer' name='hour' ordinal='3' />
+                  <column datatype='integer' name='dept' ordinal='4' />
+                  <column datatype='string' name='arrt' ordinal='5' />
+                  <column datatype='integer' name='intersection' ordinal='6' />
+                  <column datatype='real' name='latitude' ordinal='7' />
+                  <column datatype='real' name='longitude' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Acc_L' id='Acc!L_F152F32E5D20484BAF87B52CE5B1D0B5'>
+            <properties context=''>
+              <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='Acc_L' table='[Acc_L$]' type='table'>
+                <columns gridOrigin='A1:B10001:no:A1:B2147483647:0' header='yes' outcome='6'>
+                  <column datatype='string' name='num_acc' ordinal='0' />
+                  <column datatype='integer' name='surface' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Acc_U' id='Acc!U_32AF4A8352554BF190FB4D6DD9D2D96B'>
+            <properties context=''>
+              <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='Acc_U' table='[Acc_U$]' type='table'>
+                <columns gridOrigin='A1:D10001:no:A1:D2147483647:0' header='yes' outcome='6'>
+                  <column datatype='string' name='num_acc' ordinal='0' />
+                  <column datatype='integer' name='grav' ordinal='1' />
+                  <column datatype='integer' name='sexe' ordinal='2' />
+                  <column datatype='integer' name='an_nais' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Acc_V' id='Acc!V_ED8775AF3F9441EAA32194FBDE4CC540'>
+            <properties context=''>
+              <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='Acc_V' table='[Acc_V$]' type='table'>
+                <columns gridOrigin='A1:C10001:no:A1:C2147483647:0' header='yes' outcome='6'>
+                  <column datatype='string' name='num_acc' ordinal='0' />
+                  <column datatype='integer' name='catv' ordinal='1' />
+                  <column datatype='integer' name='obsm' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='COMPT2018' id='COMPT2018_BD12F48BD95D4652B8752A1688856CDB'>
+            <properties context=''>
+              <relation all='true' name='COMPT2018+' type='union'>
+                <columns header='yes'>
+                  <column datatype='integer' name='F1' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd&apos;T&apos;HH:mm:ssZZZZZ' name='date_heure_comptage' />
+                  <column datatype='integer' name='comptage_horaire' />
+                  <column datatype='string' name='compteur_id' />
+                  <column datatype='string' name='compteur_name' />
+                  <column datatype='string' name='site_compteur_id' />
+                  <column datatype='date' name='date_instal' />
+                  <column datatype='date' name='date_comptage' />
+                  <column datatype='integer' name='heure_comptage' />
+                  <column datatype='real' name='latitude' />
+                  <column datatype='real' name='longitude' />
+                  <column datatype='string' name='Sheet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='COMPT2018' table='[COMPT2018$]' type='table'>
+                  <columns gridOrigin='A1:K10001:no:A1:K2147483647:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='datetime' date-parse-format='yyyy-MM-dd&apos;T&apos;HH:mm:ssZZZZZ' name='date_heure_comptage' ordinal='1' />
+                    <column datatype='string' name='comptage_horaire' ordinal='2' />
+                    <column datatype='integer' name='compteur_id' ordinal='3' />
+                    <column datatype='integer' name='compteur_name' ordinal='4' />
+                    <column datatype='string' name='site_compteur_id' ordinal='5' />
+                    <column datatype='date' name='date_instal' ordinal='6' />
+                    <column datatype='date' name='date_comptage' ordinal='7' />
+                    <column datatype='integer' name='heure_comptage' ordinal='8' />
+                    <column datatype='real' name='latitude' ordinal='9' />
+                    <column datatype='real' name='longitude' ordinal='10' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='COMPT2019' table='[COMPT2019$]' type='table'>
+                  <columns gridOrigin='A1:K10001:no:A1:K2147483647:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='date_heure_comptage' ordinal='1' />
+                    <column datatype='integer' name='comptage_horaire' ordinal='2' />
+                    <column datatype='string' name='compteur_id' ordinal='3' />
+                    <column datatype='string' name='compteur_name' ordinal='4' />
+                    <column datatype='string' name='site_compteur_id' ordinal='5' />
+                    <column datatype='date' name='date_instal' ordinal='6' />
+                    <column datatype='date' name='date_comptage' ordinal='7' />
+                    <column datatype='integer' name='heure_comptage' ordinal='8' />
+                    <column datatype='real' name='latitude' ordinal='9' />
+                    <column datatype='real' name='longitude' ordinal='10' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='COMPT2020' table='[COMPT2020$]' type='table'>
+                  <columns gridOrigin='A1:K10001:no:A1:K2147483647:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='date_heure_comptage' ordinal='1' />
+                    <column datatype='integer' name='comptage_horaire' ordinal='2' />
+                    <column datatype='string' name='compteur_id' ordinal='3' />
+                    <column datatype='string' name='compteur_name' ordinal='4' />
+                    <column datatype='string' name='site_compteur_id' ordinal='5' />
+                    <column datatype='date' name='date_instal' ordinal='6' />
+                    <column datatype='date' name='date_comptage' ordinal='7' />
+                    <column datatype='integer' name='heure_comptage' ordinal='8' />
+                    <column datatype='real' name='latitude' ordinal='9' />
+                    <column datatype='real' name='longitude' ordinal='10' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+          <object caption='CYNET' id='CYNET_57C7ED42D3854F2690E45C54BD28F863'>
+            <properties context=''>
+              <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='CYNET' table='[CYNET$]' type='table'>
+                <columns gridOrigin='A1:J10001:no:A1:J2147483647:0' header='yes' outcome='6'>
+                  <column datatype='datetime' name='delivery datehour' ordinal='0' />
+                  <column datatype='string' name='geo_shape' ordinal='1' />
+                  <column datatype='string' name='geo_point_2d' ordinal='2' />
+                  <column datatype='string' name='infra type' ordinal='3' />
+                  <column datatype='string' name='2-way' ordinal='4' />
+                  <column datatype='string' name='sens velo' ordinal='5' />
+                  <column datatype='string' name='voie' ordinal='6' />
+                  <column datatype='integer' name='arrt' ordinal='7' />
+                  <column datatype='real' name='segment length km' ordinal='8' />
+                  <column datatype='string' name='reseau cyclable' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='METEO' id='METEO_F420C48D092F4238AF49112D71494059'>
+            <properties context=''>
+              <relation connection='excel-direct.1x2rzx90oe06iw1bxlxb71iyjzzh' name='METEO' table='[METEO$]' type='table'>
+                <columns gridOrigin='A1:K10001:no:A1:K2147483647:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='ID OMM station' ordinal='0' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd&apos;T&apos;HH:mm:ssZZZZZ' name='Meteo_DateHour' ordinal='1' />
+                  <column datatype='integer' name='Direction du vent moyen 10 mn' ordinal='2' />
+                  <column datatype='string' name='Vitesse du vent moyen 10 mn' ordinal='3' />
+                  <column datatype='string' name='Pression station' ordinal='4' />
+                  <column datatype='string' name='Variation de pression en 24 heures' ordinal='5' />
+                  <column datatype='string' name='Hauteur totale de la couche' ordinal='6' />
+                  <column datatype='real' name='Precipitations dans la derniere heure' ordinal='7' />
+                  <column datatype='real' name='Temp (°C)' ordinal='8' />
+                  <column datatype='real' name='Latitude' ordinal='9' />
+                  <column datatype='real' name='Longitude' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[num_acc]' />
+              <expression op='[num_acc (Acc!L)]' />
+            </expression>
+            <first-end-point object-id='Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC' />
+            <second-end-point object-id='Acc!L_F152F32E5D20484BAF87B52CE5B1D0B5' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[num_acc (Acc!L)]' />
+              <expression op='[num_acc (Acc!U)]' />
+            </expression>
+            <first-end-point object-id='Acc!L_F152F32E5D20484BAF87B52CE5B1D0B5' />
+            <second-end-point object-id='Acc!U_32AF4A8352554BF190FB4D6DD9D2D96B' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[num_acc (Acc!U)]' />
+              <expression op='[num_acc (Acc!V)]' />
+            </expression>
+            <first-end-point object-id='Acc!U_32AF4A8352554BF190FB4D6DD9D2D96B' />
+            <second-end-point object-id='Acc!V_ED8775AF3F9441EAA32194FBDE4CC540' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[acc_datehour]' />
+              <expression op='[date_heure_comptage]' />
+            </expression>
+            <first-end-point object-id='Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC' />
+            <second-end-point object-id='COMPT2018_BD12F48BD95D4652B8752A1688856CDB' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Meteo_DateHour]' />
+              <expression op='[delivery datehour]' />
+            </expression>
+            <first-end-point object-id='METEO_F420C48D092F4238AF49112D71494059' />
+            <second-end-point object-id='CYNET_57C7ED42D3854F2690E45C54BD28F863' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[acc_datehour]' />
+              <expression op='[Meteo_DateHour]' />
+            </expression>
+            <first-end-point object-id='Acc!C_58FD7DF6CA1C4F7EA64C0B654F950ACC' />
+            <second-end-point object-id='METEO_F420C48D092F4238AF49112D71494059' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Trend accidents vs traffic'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C2017++ (Correlations)' name='federated.1ur5xa012pqz4z13lrrnn18p0k18' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ur5xa012pqz4z13lrrnn18p0k18'>
+            <column caption='Comptage Horaire' datatype='integer' name='[comptage_horaire]' role='measure' type='quantitative' />
+            <column caption='Date Comptage' datatype='date' name='[date_comptage]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Dept' datatype='integer' name='[dept]' role='dimension' type='ordinal' />
+            <column-instance column='[comptage_horaire]' derivation='Avg' name='[diff:avg:comptage_horaire:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[num_acc]' derivation='CountD' name='[diff:ctd:num_acc:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[date_comptage]' derivation='None' name='[none:date_comptage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dept]' derivation='None' name='[none:dept:ok]' pivot='key' type='ordinal' />
+            <column caption='Num Acc' datatype='string' default-role='measure' default-type='quantitative' name='[num_acc]' role='dimension' type='nominal' />
+            <column-instance column='[date_comptage]' derivation='Month-Trunc' name='[tmn:date_comptage:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:date_comptage:qk]' included-values='in-range'>
+            <min>#2018-01-01#</min>
+            <max>#2020-12-31#</max>
+          </filter>
+          <filter class='categorical' column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dept:ok]'>
+            <groupfilter function='member' level='[none:dept:ok]' member='75' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[tmn:date_comptage:ok]'>
+            <groupfilter from='#2018-01-01 00:00:00#' function='range' level='[tmn:date_comptage:ok]' to='#2019-12-01 00:00:00#' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:date_comptage:qk]</column>
+            <column>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dept:ok]</column>
+            <column>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[tmn:date_comptage:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:ctd:num_acc:qk]' scope='rows' value='Line | Bike accidents count (gap vs previous month)' />
+            <encoding attr='space' class='0' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk]' scope='rows' value='Bars | Average monthly bike flashes (gap vs previous month)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:ctd:num_acc:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:ctd:num_acc:qk] + [federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk])</rows>
+        <cols>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[tmn:date_comptage:ok]</cols>
+      </table>
+      <simple-id uuid='{56E0A54F-3537-4C97-9539-10FF40FB9BDA}' />
+    </worksheet>
+    <worksheet name='Trend accidents vs weather'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C2017++ (Correlations)' name='federated.1ur5xa012pqz4z13lrrnn18p0k18' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ur5xa012pqz4z13lrrnn18p0k18'>
+            <column aggregation='CountD' datatype='real' name='[Precipitations dans la derniere heure (METEO)]' role='dimension' type='ordinal' />
+            <column caption='Acc Datehour' datatype='datetime' name='[acc_datehour]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Dept' datatype='integer' name='[dept]' role='dimension' type='ordinal' />
+            <column-instance column='[Precipitations dans la derniere heure (METEO)]' derivation='Avg' name='[diff:avg:Precipitations dans la derniere heure (METEO):qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[num_acc]' derivation='Count' name='[diff:cnt:num_acc:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[num_acc]' derivation='CountD' name='[diff:ctd:num_acc:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[acc_datehour]' derivation='Month' name='[mn:acc_datehour:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[dept]' derivation='None' name='[none:dept:ok]' pivot='key' type='ordinal' />
+            <column caption='Num Acc' datatype='string' default-role='measure' default-type='quantitative' name='[num_acc]' role='dimension' type='nominal' />
+            <column-instance column='[acc_datehour]' derivation='Year' name='[yr:acc_datehour:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dept:ok]'>
+            <groupfilter function='member' level='[none:dept:ok]' member='75' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:acc_datehour:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:acc_datehour:ok]' member='2018' />
+              <groupfilter function='member' level='[yr:acc_datehour:ok]' member='2019' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dept:ok]</column>
+            <column>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:acc_datehour:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:ctd:num_acc:qk]' scope='rows' value='Line | Bike accidents count (gap vs previous month)' />
+            <format attr='title' class='0' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk]' scope='rows' value='Bars | Average monthly rainfall (gap vs previous month)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk]' palette='gray_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:cnt:num_acc:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:ctd:num_acc:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:cnt:num_acc:qk]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:ctd:num_acc:qk] + [federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk])</rows>
+        <cols>([federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:acc_datehour:ok] / [federated.1ur5xa012pqz4z13lrrnn18p0k18].[mn:acc_datehour:ok])</cols>
+      </table>
+      <simple-id uuid='{AB583C5F-9DE6-457B-B564-F77E3D9E1A14}' />
+    </worksheet>
+    <worksheet name='Trend traffic vs weather'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='C2017++ (Correlations)' name='federated.1ur5xa012pqz4z13lrrnn18p0k18' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ur5xa012pqz4z13lrrnn18p0k18'>
+            <column caption='Meteo DateHour' datatype='datetime' name='[Meteo_DateHour]' role='dimension' type='ordinal' />
+            <column aggregation='CountD' datatype='real' name='[Precipitations dans la derniere heure (METEO)]' role='dimension' type='ordinal' />
+            <column caption='Comptage Horaire' datatype='integer' name='[comptage_horaire]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Dept' datatype='integer' name='[dept]' role='dimension' type='ordinal' />
+            <column-instance column='[Precipitations dans la derniere heure (METEO)]' derivation='Avg' name='[diff:avg:Precipitations dans la derniere heure (METEO):qk:2]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[tmn:Meteo_DateHour:qk]' ordering-type='Field' type='Difference'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Precipitations dans la derniere heure (METEO)]' derivation='Avg' name='[diff:avg:Precipitations dans la derniere heure (METEO):qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[comptage_horaire]' derivation='Avg' name='[diff:avg:comptage_horaire:qk:1]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[tmn:Meteo_DateHour:qk]' ordering-type='Field' type='Difference'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[comptage_horaire]' derivation='Avg' name='[diff:avg:comptage_horaire:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[dept]' derivation='None' name='[none:dept:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Meteo_DateHour]' derivation='Month-Trunc' name='[tmn:Meteo_DateHour:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Meteo_DateHour]' derivation='Year' name='[yr:Meteo_DateHour:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dept:ok]'>
+            <groupfilter function='member' level='[none:dept:ok]' member='75' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:Meteo_DateHour:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Meteo_DateHour:ok]' member='2018' />
+              <groupfilter function='member' level='[yr:Meteo_DateHour:ok]' member='2019' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dept:ok]</column>
+            <column>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:Meteo_DateHour:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk:1]' scope='rows' value='Line | Average monthly bike flashes (gap vs previous month)' />
+            <format attr='title' class='0' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk:2]' scope='rows' value='Bars | Average monthly rainfall (gap vs previous month)' />
+            <encoding attr='space' class='0' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk:2]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[tmn:Meteo_DateHour:qk]' field-type='quantitative' max='#2020-01-08 16:27:28.646#' min='#2017-11-26 20:55:50.064#' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk]' palette='blue_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk]' palette='gray_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk:1]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk:1] + [federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk:2])</rows>
+        <cols>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[tmn:Meteo_DateHour:qk]</cols>
+      </table>
+      <simple-id uuid='{65789371-C234-45D5-A284-69DDAFF163A6}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Trend accidents vs traffic' tab-color='#72bcbb'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:sum:Num_Acc:qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:Forecast Indicator:nk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:date_comptage:qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dep:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dept:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[sum:segment length km:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:Date:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:date_comptage:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:delivery datehour:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7E3BFEBE-13AF-46E4-909E-D8CD02EBBAD4}' />
+    </window>
+    <window class='worksheet' name='Trend accidents vs weather' tab-color='#72bcbb'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:cnt:num_acc:qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:sum:Num_Acc:qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:sum:comptage_horaire:qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:Forecast Indicator:nk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:date_comptage:qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dep:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dept:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[sum:segment length km:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:Date:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:Meteo_DateHour:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:acc_datehour:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:date_comptage:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:delivery datehour:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{054A40EA-A270-41FA-87C2-88851D14CAD0}' />
+    </window>
+    <window class='worksheet' name='Trend traffic vs weather' tab-color='#72bcbb'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:Precipitations dans la derniere heure (METEO):qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:avg:comptage_horaire:qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:sum:Num_Acc:qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[diff:sum:comptage_horaire:qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:Forecast Indicator:nk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:date_comptage:qk]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dep:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[none:dept:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[sum:segment length km:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:Date:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:Meteo_DateHour:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:date_comptage:ok]</field>
+            <field>[federated.1ur5xa012pqz4z13lrrnn18p0k18].[yr:delivery datehour:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{167E0467-9664-417C-BB01-327C680D8CA0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Trend accidents vs traffic' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Trend accidents vs weather' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAgAElEQVR4nO2dV3BcWXrffzd1RCMHAiAySQBMQ3ICJ5NDzuyMrJW0aVa2tZYsr2RbJVfZ
+      VpX95De7bL+4rBdZL1qtSruj3dFqZEvaMNrZCZzhDiczDJgDcgYaneO99/gBJAcgutE5ALi/
+      KlZ1s2+f+8ft/vrcc74kCSEEFhY7FLnUJ7Dsy6KaKbkBhEKhUp/CwiJvSm4AFhbVjGUAFjsa
+      ywAsdjSWAVjsaNRKC7DIn0w7bBJw7whJkkquZytiGcAWJuhbYnbBSySu41J0krpOQ+c+dP8o
+      4WQjTTU6S4EYCcPk6KH9lZZblVi3QFsYT30zbruMp7YeXagcfOgQvrlZegYG0CQJh00lHIsB
+      EpY3JjWWAWxh5idvY9gb6e/uwDR1/EsL2OsaME2BEIL5JS+Dg0OIZKzSUqsWFUrrrRVCWN7g
+      EuGubSCwsMw0BkODe5ld8NG/u4Hx26MgC3b3DbE4M8XeoWEQwpoFUiCJVUrmsY1EIrhcrpKM
+      bWFRKCqs7hB4PJ6SnaSUY1tYFIK1BrDY0VgGYLGjsQzAYkeTtyMsElhhYmYeQ1JpqbXj9QVx
+      1jYRDywSiZscOHwITba8jxbVTd4G4Kqtp1dRuHJrkpZ9A2BO4I/HSEoa+zrtTCyG6W12YhgG
+      uq4XU7OFRdHI2wDiwWVG7ixy7PABpsduottq2dPTxOXrN4nHdexuFUVRUBQFVbUiLiyqk7zX
+      AJFIApdDZnxyBl1APORjyR+muc7NYlyls8FRTJ0WFiVBKnVSfDAYtPwAFlWLtQtksaOxDMBi
+      R2MZgMWOxjIAix2NZQAWO5rCPcGoNLoVlv0hWjt68M1PWJ5giy1DAdugglg4wNXb02iK4MDw
+      ICMjV5FtNvqa7MyazfQ2OwkGg9TU1BRXtYVFkch7BogFlrk8tsTRQ/u5cnkE09SRFRVhmsTi
+      SRyWJ9hiDXowzJ0//SH7/vO3Ky1lHXmvAaKxBE67xPjkDH1dHVy/MUr/3n201LlZimt0WJ5g
+      izXE5peZ/uvXKy1jA3n/NDe0dtDQ+sXz/XWNADg7u2krWJbFdiO+6CU2t0jSF0Srr57IAGsX
+      yKIsJJZ9yHYb4dsTlZayDssALMpCYsFL89PHCF0frbSUdVgGYFEW4otemp46RvDq7UpLWYdl
+      ABZlIekLUP/oISJjU5WWsg7LACzKQtIXwNnRihmJVVWhtLx3gUxT5/rINQYOHyS8OMf80gpt
+      u3uJrMwRiJkM7R3AKkhcGN/5y1cZuXItq2O7dnfwR//u90usKD+EECT9IbTGOuxtTSQWvdhb
+      myotCyjEAHQdp6qRBGbmFuju6WJiehJhmnTVq0yuROlqcFilEQtgenaO6zfvZHXsvXqg1Ygw
+      TYSuI6kK7oFuwrfGsbU0VloWUIABqDYHmrJ6B2XTZOYXlrCpGkk9gaqq6LqBaZoIITBNs2iC
+      dxQ5faGr9zqbd7/8pmni2tdD4Mot6o4/VGlZQCGhEOEAcyvLBEbtuO0OwrEEnvp65OASt+fD
+      7D/YiyKBLMsoilJMzTuG3JpaSFV7nUUsgWK3oygKnsF+fGc/rRqteRuAw13Lw48/vvGF9pZC
+      9FhsQ5IrfrSGVe+vq3c30am5Civ6AmsXyKLkxBe9ONqaAZBUFUwTYVTH7ZplABYlJ7G4cn/R
+      K8kSzq5dRCdnK6xqFcsALEpO0hdAq6+9/9zV3010tDpigiwDsCg5ieUVbM3195/XDPYRulYd
+      IRGWAViUnMSSD1tzw/3n7sEBIjfGKidoDXkbgBAC7+ISOmAaSUZv3yISSxL0LTE1u2D1o7K4
+      T9Lnx9ZYd/+5raWBxJK3goq+IG8D0OMRxm/eIQ7cun6dxtZ2FMngzsQsUniRpVCyiDIttipC
+      CHRfcN0aQFJVZE3FjMcrqGyVvP0AmsNNa9PqtOYPBtAWZgjHTDSbjaYGF5PBKI1O2SqPXgC5
+      hTaI6rzOQmAkEghVWafP1tFKaHQK156eCoor0BM8MT2Nz2anraWFUCyB3eUh5l/iymiQoYc6
+      URTZSoovgFw9wdV4nU3dQFbVDdo8g/3ERyepHRqokLJVCvIEP3HqZIpXuvMWY7H9uBcE9yCu
+      vX34zn1Ky6+cLL+oNVi7QBYlxQiG0Wo31oVyD/YTrYL8YMsALEpKfNG7bgv0HorHjREKV0DR
+      eiwDsCgpiaUVtIa6Df8vqyqKy44eDFVA1RodFT27xbYn6Qtgb9k4AwA4ujuJjU+XWdF6LAOw
+      KClJXwCtsT7la+59/USuVzYkoiADMHT9vsfX0JOYQmAYOomk5QSzWCW5vJJyDQCrO0HRO5Vd
+      COdtAMlYmI/efZ8IIEyDj878jBlfgs8vXuDq5xcIxqsj3tuisiS8/nVe4LU4+rqI3hkvs6L1
+      FOQJ7u5sBwTT47fp6O5HGDo2l4eBVhcTy0FcbTWWJ7gAtoMnOOkLINfVpNZm0zDj8Yrqzr8q
+      hKETT8SJxeLEEwa+pTkUGpDiMabn4zT3tld1eXQjGEZ22JG06tN2j63uCRZCYEZj2GvTF8PV
+      GuowfQFszZWpEpH3FdMTcdS6WqIrfgYGh9H7+jBlO2a8llDCpMFZXR/Gg8z9yV/gHBqg8Ssv
+      VVrK9sU0kZTN77KdfV3ExiYrZgB5rwFsTjfd3d3sbl8thq7aHNhUCYfbQ3OKfd9qIzE5g/e1
+      n1RtLZ3tgDBNpAzVH5x7+ojeyK72USnYkdugQgjMWAyttZl4hXchtjNGOIrqdm56jGtPH7Hx
+      yTIp2siONAAzGkNSFRp+40V8//DzSsvZtiR9gZRe4LXYd7cTq2B+8I40ACMQQq3zUHP8GNGR
+      a5ixyidmbEeSXj9a4+YGINk0JAmEYZRJ1Xp2pAHoS8tobS3IdhvO4b2EP7tUaUnbkqR3BVtT
+      aifYPSRZRmttJjG7UCZV69mRBpCYnMHW1QlA/Vd/Bf+P36iwou1JYtmHlsEAAJz9PcQnKtM3
+      oDBP8NkPiAILs5Ncu3qF0clZrl2+xPnzF0gY1bu7kpiZw9a5CwB7bxf6ig/du1JhVdsPfWV9
+      Mnw6nP09RG9XpnVSQZ7gzpYmTKBl126M5CgRQ8dU7Ax2OZhcDNHb4qpKT3B8Ypqak0/e11Vz
+      6mn8v3iXuq/9aoWVrWere4ITK36kGldGXVp/DytvnqmI/qJ4qybv3EByN9HfWs/lqzeJRuM4
+      a21V6wk2A0FsTY33ddWffobp//I/aPzGryHJ1XNXuNU9wbo/iKOlKaMuua0FfclbEf15f9qx
+      cICVeIzp0QkkRSXiX2bJF6atycOK4aS9zl5MnUVDmCZmNIbicd//P7WxAa25kUSFA7O2E0II
+      jFAY1bMxHfJBJE1DkuWKlEkpKCn+4OFDKV6po5oLpJvhCLLTscFDWfdPnsf/kzdo/ff/ukLK
+      thlCgCQhyZlnMUmSsHe2k5idx9Fb3qIK1TPflwnDH0RNEZ7rPHaY2JXrlk+gWJgipw43jv4e
+      4hVwiO04A0jOzaO1t274f9lmw3nkIJFPL1RA1fbDTCRQHLasj3f09xC7M1Y6QWnYcQaQmJrF
+      1rEr5Wu1L54i8BMrNKIYrKZCZvYB3MPe10P8VvnTI3ecASRn59A621O+ZuvtQsTi6MuWT6BQ
+      9JXMYRBrUetqMSpQIWLnGcDCMtqujbdAsOqWrznxJKFfvFNeUduQ5Io/bTJ8KiRNQ3Y4MMLl
+      rRWUtwGYRpLLFy4RB/xL84xcvkwgEmdy7DZXrt3ErFJHsOEPoNalzlEFqDn5NOFzHyGqtOXo
+      ViHp9WHLwQAA7N2dJKbL2zop721QYQpqbHZ0YGJukYPDg1y+egNkhe4GjSlvlK7G6mqULZI6
+      IpFAcjrSapJrPSgN9cRv3sa+b0+ZFa4n18tWLdcZVmcAe+eunDTZuncTvzOKY2/5CubmbQCK
+      ZkO9m+4mSRKrMa0CSZaQZRnjbpPsamqUbYRCyC5nRj2eL3+J4Otvou3pL5OydGzdRtlJfwCl
+      tiYnTfaBPoLvvY+njH9HWgMwDQPdMNE0NaVLPhYOMO9bITg6wa6mOi5fuUZn7wC++QlGl2Ls
+      3+9GrrJG2bo/gNbcmFGP69BBfN/5HlIyiexwlEndRrZyo2zDF8DWUJ+TJkdPN95XXi3r37HB
+      AISp897bb7ISSuB02gmHggwdfZzhvs71Yt21HDv+2P3nzbt2A9DgGSyx5PxJTqffAVqLZNNw
+      PXKU6CfncT/9RBmUbS+EEOj+IGpd5jCItchuFyKeQAiRo/Hnz8ZFsJHk0GPPsre3HVVV6R08
+      RFu9qyxiSk1idh4tjQ/gQdynTxJ6/Y2quq/eMty9ZLKm5fQ2SVFQ3E4Mn78EolKzwQAk1UGd
+      28bZDz7hwIED9O5up7Ehe4dGNaPPzWG7W8UiE7aeLtB1jKXlEqvahggTsogBSoWtp5vkZPmS
+      Y1Jug5554ycoqsaZM2e4ePVW2cSUGn1pBTWH+jOuE08TfutMCRVtT4RhIqfoCpMN9p5u4mPl
+      i8rdaACSxBPPnEZzOHjxSy8wM1EdDY0LRQiBEQwgb1Kl7EHczzxF9IOPKpawvVXRA0GULMKg
+      U2Ef6CMxOlZcQZuQcga4c2OEibEx3nrrbY4+sj0WgSKeQFIUZFv2AVpyjRutvY3ErcoVbtqK
+      6JuURM+E1tFOcqZ8zrCUBrD/occ4OjxAIplkfiFztn4sEuTmrdvEkwa+5QUmpueqrlG2GQqj
+      5PDrfw/3iy8Qft1Kms+F5IovbwOQ7HYw9LLNumlDIeZXgpw8eZKHhjN7Q2/evEN3Zys3bt5k
+      fGYBLe5lMZgoqtBC0ZeWUZtyrz9p3z+EPj6OGY2VQNX2RPcFUOty/7GB1XgstaEevUybD2kd
+      YUN9nfzoR6/x6DOnOP7Q0KaDOG0yN27dwelpJBGL0FDnZCoUo8mlVE1SfGxqGqW9NXctkoTt
+      yGEi5z7A8ezTpRGXhq2aFJ/wruDo7c5bj9rdRXxsDCmPH6ycz5XuhUtXbvLMU0/x4cVLGQ3A
+      EAJV1RCmwIxHuDIWYvihLhRFqpqkeHNxCXtfT15aak4/h/8738X93ImyOWhg6ybFG4EQ9qb6
+      vPU4+vvQp6ZQ1zhaS0VahW2NtVwaucyu9syBSYP7D695Vp2NsvW5BWqePJ7Xe9XODkQigbGw
+      iNqWOpTa4gvMYBilxp35wDTY+nqJnPugeII2Ie0aoLuvn4bGZtpaKlO3vdgY/gBKff5l213P
+      nST67ntFVLR90QPBvNcAAEpTE8ZyedYAaQ3gwsh1jh45wkB3R1mElBJhmpiRCHKee9MAjscf
+      I/7hh5ZPIANCCMx4HMW5eVn0zZBsNjBNzETpN1LSGkDQv8zFixe5MzlTchGlxoxGkR22gope
+      yW43alcXyZvbxzNeEoQouLiYJElo7bswstiCL5S0Sj1uJ8FgkEh065cJMYMh5Jr8f/3v4Tp9
+      iujPraT5TTFNKEJ1Pa27m+RE6cukpF4ESxLf/oP/UPKTlwt9YRFtV3ZBcJuhDQ8R/P4rq7dT
+      ru0RIVtsjEgMxVV4DoXW20vixnV48skiqEpPalMVgnPvn+PMGz/m3Q/OZxxECEEoGEQ3TPRk
+      vOpmDX1+AS3LKNDNkBQF+5HDxD/8qAiqtid6AV7gtWjdXSTHxgoXlIG0c9WnH53lxrSP61cu
+      Zhxk4s5NvP4A0ViMkZHL3Lk+QiBWPYvF5NwCalvhBgDgPHWK+Nn3rDyBNOj+AFpD4Qag1NUh
+      gsEiKNqctH6AL3/5y+iyHVnJPJ0tLC1RW5skntCxOd2rjbK9IdxV0ig7Ob+Aq6mhODoaGxGG
+      QXJ2Frm1tD6BregJTviyK4meEUkCWSIZCiGVMC01rQH4VlbwhyKM3J7nD3/vtzYdpK62lvqm
+      ZhaX/OiJKBOzMVr6O6qmPLoIBbHV1yMXSYfz+dMkz76H+5u/WZTx0rEVPcGmP4CtOXNJ9GzQ
+      du9GzM+jDZSuSkTaWyDv0gJz84s0NTdlHGTv4DCyJDM0tJehwb20dA1Q76yOBG2h6whdR3Ll
+      vy/9ILZjD5M4fx6RTBZtzO3CaiBc+rpLuaB1daFPlzY7LK0BqIqCYeh0dfdkHESSFZpbWlBk
+      CbvTTX1t4VuOxcKMxlBcrqLG8MguF2p/P8nLI0Ubc7tghMMpq2/ng9rbi17ihXBaAxi5OcFL
+      L32JS59t7R0P0+9HLiAEIh3OF18k9gsraf5BjGA472ywB1E7d5d8BkjrB/jKrz7PL899wle/
+      9rWSCig1ybn5ovgAHkTp6kZEo5jLyyjNzUUfv9L89z/+06yN+8STj/H08UdWwyAikYIC4dYi
+      u92IULCkZVI2GoAQfHbhAitz40TCca7duMWux4+W5OTlwFhYRG0tfs8aSZKwnzhJ/O23cL38
+      zaKPX2kWl71ZG0A4El19IASIXBfv6ZFUFbmmBhEMItUW57bqQVImxR87cgQB2J1uurMoJFXN
+      6AsLJQthtj92nOSli9Zi+B5CgFLcguNqRwf6zHRRx1xLWrW7drUTC3o5//nVkp28HBgrPpTG
+      0oR0Sw4H6p491mL4LmY8geIobnNEtbsHY2qyqGOuJa0BmIZB/4GjHB3OvAcrhOD8+28yF0hw
+      5fOLnP/sPPEqaJQthMAMhVA8+cemZ8J++nlib1qLYQAjEMyr8MBmqD096ONjRR1z3fjpXjjz
+      /sccevhR3vzsE/r7fnfTQZZnJ3B56kkmk6A5GGpfbZTdV+FG2SKZJBgO8+d/+mdZv+el0yc4
+      OLQv+5PsakdEI+jzc0jNxV1rVNYTnP25hWmi6zpx7wpKfW1xdbS0YczNlOw7lNYAHj64l5Er
+      Ixx9/LkMQwjmFpeJh1aI2L2oukEoHKOmofKNso1gEMlhZ8mbfcujZFLPWa/j1PMkz76L6xvF
+      9QxX1hMska0RSLK8eu5QGK2utqg6hNsN8TiKLJekiXlapVPzPr7127+LQ8vk0ZU4+NAx4mEf
+      uuoh5l/AHzPpq618o2xjxYfS3ASLvpKex/bIYwT/539FJL66ms20Q9GDIdQCb4GEEAQe6BUW
+      rmtAzMwg12705zgcduwFXPO0BtBQo/Laa6/RPTDEieNHMg5kd9djB9yt7WQOnigP+sICamtb
+      yQ1AstlQ9+4jeflzbEcfLum5qhkjGMSWpv9atiQSSf7b//6TjS985/spj/+Nl57n6eOP5H2+
+      tHNKIqEjklHEFu6jZyyWxgeQCvuJUyTOvLWjF8OGP1jwDFBu0n67Z5aDnDp1mvMfvMOSt7S/
+      oKVCX1hEKXHI8j2Ujk5EIoG5tFiU8YQQmIHy1ckvBkaw+LtApSatARx/5Ahj4xM8+vAx5ha9
+      5dRUNMxAoKwfiP3kaRLvvlWUscyZaYzbN4syVjkQQmCGixcGUS7SxALBnqFDmMk4aE5qipDj
+      WW6EEIhopCjJ8NmiHTlG/Oc/We1EWeBiOH7mTSSXG/zRIqkrPcI0kKqoT1k2pM0JfuWvfsAr
+      3/9LXnn1b8osqTiIWAxUtSgVCrJFstlQ9w2hX/68oHFEPI5x+ybKwN4iKSsDQiDJW+vLD2l3
+      gSRaahSaDz+DHstcFXl5fobFFT/1ze3EA4uEYibDw4P5dskpCiISqcj9qO3ZU8R+9FeoR47l
+      HRSW/PRDtCMPI10pfVmQYiF0HUmrfEZarqRV3L67i/HR69R3ZC6PXt/cht2uMTG/hDANuhtt
+      TC5H6Gp0YJpmRfrXJhcXkRsbc96VKbSvsdTahtCTGIsLyHl6hhPvv4fz23+AuPy9nN5XsT7B
+      QqAHQyg1roI1mCK39xf6eaW9PwiHQsiqnbbmzA3yvPPTTCwEGdzTw6oHMbcWz6XAWFhAaWnJ
+      Q0nhym1Pn8x7MWxMTSDV1CDV1uWopdhXPIdQCMDw+0sac7XZuQsh7Qxw4oUvZ92w2Ovzoyg2
+      vP4INTaJCW+SoWHX/UbZchnvw+9hLi9j27cPQ8rt3JJUuF7tyDESb/wUSU8i2XLziMfPvoPt
+      meeQFSXnUIjiXuccQiEkCTMURq2vK1iDnOPnJUuF/d1pDeDyZ+f4/MYEx589zZ6uzTOqBvcf
+      +uJJY/HTD/PB8FYuU0vSbKiD+9FHLqIdy77GvYhGMcbu4Pjmt0qorjQYwRBKkZLhy0la0/ng
+      wlVe/vqv8/PXf1K5e8sCEKEQcgWm5HvYnnmOxPtnclqDJM9/jHbsEaS8gslERb3QRjCIWqRc
+      4HKS1gB2t9Tyd//wM1w2mbMfXyqnpoIRhoFIJpAKKNFdKHJr2+qtwcJcVscLIUh+cBbtiWfy
+      Op+5uAh65TLTzGBoy3mBYbNFcDDIzOwkhq2RZ7MIhqsmRCyGZHeUtZ1RKrSnnyP5fnaNts2p
+      ceRaD1JtfmUFRShY0sypTGzFMAjYxADispPhgT7ika0VjwJgBgMVvf25h7r/EMbNa4gsGj0k
+      33sL7ZnT+RutREVDJ8xQGKWMXvdikdYATj37NN29ezj1zJPEEpWvOZkLxuLS3S3QyiJpNtTh
+      g+iXPt30OBGJYMxMogzkkIn24Lk8tRhjlWvoveoI0yp2/nxJawCvvfYjvD4fP3r1Fb736t9m
+      PaB3cY7RyZmK+gGM5SXUKjAAAO2JEyQ/2LyatH7hY7Qjj+a5+F1FbmrB9Hkr08JJCO75f7Ya
+      aa94T8dq4+vho0+giewWV8LUmZpbps2jMB9oZldtcbKjDMMgmcMCz1haRDu2miQhyzINOWzP
+      2Wzrf8Ui0SjJZHYzoCzLeNZEQxqGSdjuICarJCYnkBtSV6eIfnwO+9d/Cympo60JJ6irraW1
+      Jbv0osaGeuR6DdO7hNLShmEYGDkYg6Zp626/Gurrst5Vcmga0pq4l1g8TiLr/l4StWt2jySJ
+      rD4vkUxCMrEhGywUDmMY2e1aapqKJB74K0U8wHufXueRY4dx2m0sz00yOh/i0SP7Mw5o6gmu
+      3Rqlr9nJtF5PX4sbv9+P4255a1mW72+p3nssSdLqbskmj/1+P3fGRrP6owAGPv0Yz9deRqqv
+      z2r8ex/82gpk9x6/ceYs127dzuq8DfV1fOvrX0EIgSzLrPj9/PD//n3Wul987gS9XbuRZXk1
+      mvXuOGsfP3j91j3+5TuYmg35sScJBAJ4vdmHsff0rPZQvmc0iqJk/dgMhQj//U/x/PPVAmGf
+      XLjEp5eyCwhUVZXf/9Y/2/zvYuP3RfhWSP7wu9j+7R+t+/9XXvt/eH3ZrVsHB/o3zgCS3cPB
+      Pe289/abhGMJWtt389gj2VWGkxQNklGuTUTuN8rWNA1Xge2EItHcQoJFOIyrubko+bnZesPv
+      4Vyz9WrPUXeh18oYPkjy7Ns4XC4ikUhO73UVUEA44fMTr/Xc157rNXPkUf9ftO0CTcMWCSE3
+      fuHwlHOISJUkKdUtkERjSycvvNixaml3f3myHXD/ocpvmUoO+45MTpc7dmPMzSDK7Lg0gqWt
+      vZQKSZJQjz6GfuETbKdeynuclN/sUNDHn333uyzMz/K9H/x13oNXCqV5Z3Zzl2QZSVURodK3
+      FlqLGQwUrSJ0LqhHHsG4cqkgD3hKA5iZGGVy9DY//vHPGD50LO/BK4XSsv2qNWeLsmcQcyy7
+      NUuxqFQckORyI3lqEQuzeY+R0gD2HThKS2MDBw4ewOPaercSyq6tXdC3ENRDR9CvXS7rOQ2/
+      H7W+8MZ4+aA99RzJM2/k/f60N/d1NQ7Gx8eZX8q+qlq1oDRWS2Wi8iO3dWDOz9zdmy8PZjiM
+      XKFkeLm3H2N6ApFnHFRaAxgaPkBtrQf7VvTu1WdO4tmuSKoKilK2dcD9AsQVCoOQVA11YBDz
+      1rW83p/WAIYPH+P4ow9z5fPMfYKX5qe5du0qs4srjN2+wciVa1S0OPQWq0xQbNSBfZhT42U7
+      n9CNioZBqI8+iX4+v1ZeaT3Bn557h9EZL8NHjmccpKF5F3ZNY3JxGWGa9NzNCe4uUk6wyDVP
+      tIh5yCLHoI615zXLnI98D6l/H8ZHv4Sm7FtDrXUI5oQQIK3/uwu5ZnnRsgvTu4QRCZNrKmf6
+      ynAz87Q2NzAxmb47h5GIcuPOOMtzU0x5w+tygosbGVK5OJOtGOGi7O4u38mEKEnV5pyQZZQ9
+      Q5jXci9Hk3YGSCQT2B1OllfSl0VRbE729fdw4+oIsqzh9Ufw2GUmVnSGh4qXE5zrL5NU1Dzk
+      3M699rxyrroLzG+9j9OF3L47p7fIspzXDGBEosgu5zrdUgHXLF/Uo8dJ/uw1sGXvA5LYxACO
+      P3WC+sYmdgczu/P3DR/84kmV5AQXi67O9qw/IHcRm3EXitK3F6KZazoVihkKVqQaxINIza2I
+      RAJhhHN6X1oDeOvtd/jG17/CO2fPMTyYuTbQduXw/mEO7x+utIyckTy1ZTKA8odBpEKSZZT9
+      hxEfXgJ79vFUafsE/+bXf53zIzf45svfKJZGi22IGQojuwsLdiwWysFjPPnZZ5jPZ+pqtEqd
+      x5NuBhA4PE0cf6Rmk2WyhQUYoSBqQ3X4XaTaevrddrS2ZuT67DqDpjYAIfjhq69iJiLgbODf
+      /O6/KKZOi22EGQohd5dx12kTJElCOXQM8/J55KdOZ/WeNL/vEgMdjRw+/ixDe7ZQhWKLsiMi
+      EeQC8z2KiXLwGMaNy1lHiKY0gKB/hetTy/TsaubOeHaZWAvT44TjBssLs9yZmK54bVCL8mAG
+      g1VlAJLTheR0IbzZdepJeQs0PzNBNBziwsVLPHPiVMZB9FiQ0ds36HS24l3wsqtGYc4fp72u
+      8p0iK4nb7ealUyezPr6tTP3MioUQAhGPbyhA9sjRhzh8ILuds1LUblIOHsW48BHy6S9nPDal
+      AewZfgjnL94gEokwMzObtjaokYhye2qB8PIcdXUegsEgqqriqXEwHU1g1KhFaZRtmrlVOjAr
+      2Jx7LYoss7e/L6f3FEt3ruEFuSTQr0XI8ob3KrKMM4c0x6J/Vn2DGL98C+nZF1ez7DchrR/A
+      NAUulwu7PX0+wKonuJtQSwMrc2PoDgexYIxrk1H2H+5GUaSiNMrOJc8TQK5gc0SyX04AAAc4
+      SURBVO5qIVfvqpJzNerVmCv5XpPsakKtQTS3Ii/OIXd0bX5ouhdefOF57iyGcSiZLopEjaeW
+      Gs/h1adtD+Uq12KLstoLrTrD5ZWjj2OMfJrRANL8TAh+9tZZXA6VDz86VwJ5FtsBs8IVuDdD
+      6upHTI0hjM1vr9Jugz718EGuXb7Co09m51Wz2HmIcPXWA5U0DamtAzG+eX70RgMQgrde/zvO
+      fjKCx+3i9u3K1Zu0qG7MSBjJXb19gZVDj2BcOb/pMRsNQJI49dJvIEuCp596goXZqVLps9ji
+      VEsgXDqkzh7E8sKm+cIpZ4BINMqvvnCSX577mC+9lH/RIYvtjRkKVfUMICkKcs8AYvxW2mNS
+      rgHGJyZY8vpoaKjH7/NlPJEQJstLiyR0g3g0gj8Yyl+1xZZBRKPIVWwAAPL+Yxgjn6R/fcP/
+      SBLDg4PcHJ/l+dPPceNK5vZIY7duoAuZZCLB1WvXmR+/iS9agTLdFmVFRCPIzuoJg0iF1NwG
+      /hVELHViV1o/QJ3N4Pvf/z6tvQfTHXLfE+zzLlOnG/h8TmxOFz2tLiZWQnhsNTvaE1xJyuEJ
+      NiMRTLsds9qvde8+9KsXkA49uuGltAbgatrNr3z1Kd47+0Hace/lBN9KhrG7aghGEiRjEW5P
+      htk91IGiKJYnuEKU2hMshEBCoG6BulHisRMYP/trGL+B8vRLq7PCXdJ+S0avXSQWCbAYznxR
+      BvYNEQqF6dxdg5lMkDAELvvOrs2zI5C3Rs0MyeFE+cpvI6ZG0d/+B6S6RpQnTiN56tKlRMIz
+      Tz3J++evsPfgw5lPIMl47m6HyTZ7equy2D4YekEtncqNJElIXf1Inb2I8ZsYP/4B0q7ONJ5g
+      IXjj3Q/o6urg2uXca61YbH/MSPUvgFMhyTJy3yDKN38PqS2dASBx8rlT1GrQv3eovAottgQi
+      FEKqYidYJiRFRd5/LH1ViP379wOZ+4JZ7ExEJFz1PoBsSJsU/7c/+Asi9kZUQ+effvPrZZZl
+      Ue2Y0eiWvAV6kLR7Zb5giODSDDHT2s2x2IgIV3cYRLakXcbv2TfM7u5uRmcyN8i4c/MqiaSJ
+      zdNIxDtLImkyfORhnOrW2CazyB0RiWzTWyAhmBy/g12B//XH/4c//I//Ke2bTT3BgjeAqRsk
+      dB3NNJDtbvbvdjK1GKSv1W15gitEqT3BZiSMaXcgtvh1TjkDRKMRbJ4mfu9f/Q42OX2BE0mS
+      cbmczE0nOLB/iCvXR5Ek8AXC1DbvsjzBFaSUnmAhBMRjqDWeLeULSEVK9aGYjm9unMVAnLYe
+      2NObutS2pKjU1qjs29PP6MQM+wb3EQ+tEIiZdHm2XnM9ixwwjC3/5YdUBiBJNDphztaEzRzF
+      6cx8n+fy1LPPs9ol0GlvpTL9Ai3KSQnK+VSElPPkL85+giM8RvuR05z/+Gy5NVlUO6a5bfqw
+      pZzD9vbs4s74DJL/DC0dPeXWZFHliHgMKYfCV9VMSgM48cKvcaLcSiy2DCIcQnZt/S1QSGEA
+      IhHm3XPrU8gaWndzeHigbKIsqhsRCSNVUUHcQtg4A2gunnjiiXX/VfEugBalJ5kAW5bFjGMx
+      JFd11gPKlQ3fbEmSsNlsCCPBkneFSCSGlmK7S0/EuPDxZ8SApbkpRkZG8AYijN68xucjVyrb
+      KNsiZ8zrmRui30NEI0hV1BCwENIGw/3Fn/8ZbQMHWJ6b4dv/8nc2HCIrGk2eGgxgbsnHgf1D
+      jFy+hqyq9LU4mVgK09PkxDTNvCsP35eTo1dTFOGcW51sG0TcP/7G5xjDx7La3zQjYeTWXdvi
+      Gqf1ZHS1t3LzxhX2HX58/QtCMDF2h6b27vV9cIW470k0TRNFlVazcO7+K4Sc+wQX4Zw7Damj
+      B2nqDnRn0RE0GkZ2ubfFNU5rAE3NrehqDfW1D6z2JYnuvgFi4QBLoQCh0Qm6drVw+doNegb2
+      4pufZCpgMrTPhSQVqflzrhe6WA2ntzA5/2gcehTx7k+Re/Zmfm8shux2b4u1YVoDuHxrgpdf
+      fhlFTZ3173DX8tDDX+QL193NtPf0WrtFWxHJXQuaDVaWoDF9pxohBOhJJG17hLqkNeGutnr+
+      8R//kU8+v15OPRYVRDr4KOLyJ5Bp/bANbn3ukbI26GcXLqDcbX2Ta1itxRZmVxdiZQmRiG9y
+      kNhO3//UwXDHjh4FjoIw+fufvr762GLbI0kS0uBDiOsXkQ4fT31QIgd/wRYg5Rpg5NP3uXJ7
+      ChAsha0ZYCchDQxj/vSHiIOPplzkilgUaRvkAt8jpQEcOPYE+4/evQ/cTvOdRUYkVUNq74aJ
+      W9C7b+MB0ci2MoCUi+B7W5eyLK/f61+DECbjt26TBIK+Za5fv44/FGVxbopboxNWo+wtjLT/
+      YcT1iymdaate4O0RCAeb7AJlwkjEiYWiJFgtktvf08n42BhzSwHqlSizvs0WUhbVjOSuAZtj
+      dUv0QWIR2EYzwP8Hbw54KVOAKiMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Trend traffic vs weather' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
