@@ -63,7 +63,7 @@ elif select_page == page2:
     if __name__ == "__main__":    
         main()
     st.markdown("coucou")
-
+    st.components.v1.iframe("https://public.tableau.com/app/profile/victoire.rey/viz/CyclingpathsParis/Tableaudebord1", width=None, height=None, scrolling=False)
 
 # =============================================================================
 #     st.markdown(
