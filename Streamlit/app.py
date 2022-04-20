@@ -46,7 +46,7 @@ st.sidebar.write("Olivier Masson " "\n" "[Linkedin](https://www.linkedin.com/in/
 ############### PAGE 1 - EXECUTIVE SUMMARY ####################################
 ###############################################################################
 if select_page == page1:
-    st.subheader("<h2>" "Executive summary" "</h2>", unsafe_allow_html=True)
+    st.subheader("Executive summary")
     st.markdown("PENDING")
 
 
