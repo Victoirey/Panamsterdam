@@ -47,7 +47,7 @@ st.sidebar.write("Olivier Masson " "\n" "[Linkedin](https://www.linkedin.com/in/
 ############### PAGE 1 - EXECUTIVE SUMMARY ####################################
 ###############################################################################
 if select_page == page1:
-    st.markdown("<h2 style='text-align: center'>" "Executive summary" "</h1>", unsafe_allow_html=True)
+    st.markdown("<h2>" "Executive summary" "</h2>", unsafe_allow_html=True)
     st.markdown("coucou")
 
 
