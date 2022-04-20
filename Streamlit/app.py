@@ -20,8 +20,11 @@ st.markdown(
 "</h1>", unsafe_allow_html=True)
 
 
-############### SIDEBAR ######################################################
+###############################################################################
+############### SIDEBAR #######################################################
+###############################################################################
 st.sidebar.subheader("The bike revolution in Paris")
+st.sidebar.subheader("en route to #panamsterdam")
 page1 = "Executive summary"
 page2 = "Infrastructure overview"
 page3 = "Traffic overview"
@@ -35,26 +38,22 @@ select_page = st.sidebar.radio("", pages)
 
 st.sidebar.write("\n\n\n\n\n\n" "\n\n\n\n\n\n")
 
-st.sidebar.write(
-"Olivier Masson "
-"\n"
-"[Linkedin](https://www.linkedin.com/in/oliviermasson/) "
-"\n\n"
-"Victoire Rey "
-"\n"
-"[Linkedin](https://www.linkedin.com/in/victoire-rey/) "
-"\n\n"
-"Final Project - Data Analytics Bootcamp"
-"\n\n"
-"Apr-22"
-"\n\n"
-)
+st.sidebar.write("Olivier Masson " "\n" "[Linkedin](https://www.linkedin.com/in/oliviermasson/) "
+"\n\n" "Victoire Rey " "\n" "[Linkedin](https://www.linkedin.com/in/victoire-rey/) "
+"\n\n" "Final Project - Data Analytics Bootcamp" "\n\n" "Apr-22")
 
 
-
+###############################################################################
+############### PAGE 1 - EXECUTIVE SUMMARY ####################################
+###############################################################################
 if select_page == page1:
+    st.markdown("<h2 style='text-align: center'>" "Executive summary" "</h1>", unsafe_allow_html=True)
     st.markdown("coucou")
 
+
+###############################################################################
+############### PAGE 2 - INFRASTRUCTURE OVERVIEW ##############################
+###############################################################################
 elif select_page == page2:
     st.markdown("Cycling path - map", unsafe_allow_html=True)
     def main():
@@ -73,10 +72,16 @@ elif select_page == page2:
 # </iframe>
 # =============================================================================
 
+###############################################################################
+############### PAGE 3 - TRAFFIC OVERVIEW #####################################
+###############################################################################
 elif select_page == page3:
     st.markdown(" ")
     
     
+###############################################################################
+############### PAGE 4 - ACCIDENT OVERVIEW ####################################
+###############################################################################
 elif select_page == page4:
     st.markdown(" ")
     def main():
@@ -107,14 +112,23 @@ elif select_page == page4:
         main()
 
         
+###############################################################################
+############### PAGE 5 - CORRELATIONS #########################################
+###############################################################################
 elif select_page == page5:
     st.markdown(
     "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
 
+###############################################################################
+############### PAGE 6 - USERS' PERCEPTION ####################################
+###############################################################################
 elif select_page == page6:
     st.markdown(
     "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
 
+###############################################################################
+############### PAGE 7 - CONCLUSIONS OF PROJECT ###############################
+###############################################################################
 elif select_page == page7:
     st.markdown(
     "<h1 style='text-align: center'>" "<strong>The bike revolution in Paris (2018-2024):</strong>" "<br><span style='font-size: smaller'>en route to #panamsterdam</span>" "</h1>", unsafe_allow_html=True)
