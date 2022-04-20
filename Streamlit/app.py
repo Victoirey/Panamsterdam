@@ -65,7 +65,7 @@ elif select_page == page2:
     
 # Cycling paths
     image = Image.open("images/Cycling_paths.PNG")
-    st.image(image, width =100)
+    st.image(image, width =1000)
     
 
 
