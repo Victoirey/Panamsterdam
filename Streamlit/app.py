@@ -32,6 +32,23 @@ page7 = "Is Paris municipality giving itself the means to achieve its ambitions?
 pages = [page1, page2, page3, page4, page5, page6, page7]
 select_page = st.sidebar.radio("", pages)
 
+st.sidebar.info(
+"Olivier Masson"
+"\n"
+"[Linkedin](https://www.linkedin.com/in/oliviermasson/), "
+"\n"
+"Victoire Rey"
+"\n"
+"[Linkedin](https://www.linkedin.com/in/victoire-rey/), "
+"\n\n"
+"Final Project - Data Analytics Bootcamp - Apr-22"
+"\n\n"
+)
+
+
+
+
+
 
 
 #<iframe src="https://public.tableau.com/authoring/Bikeaccidentmap/Bikeaccidentsmap"
