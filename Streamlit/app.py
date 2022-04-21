@@ -11,7 +11,6 @@ import plotly.express as px
 import pystan
 import Prophet
 import fbprophet
-from prophet import Prophet
 from fbprophet.plot import plot_plotly, plot_components_plotly
 import plotly.offline as py
 import plotly.io as pio
