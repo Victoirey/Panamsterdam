@@ -4,7 +4,7 @@ numpy
 matplotlib 
 seaborn
 plotly
+pystan
 prophet
 fbprophet
 scipy
-pystan
