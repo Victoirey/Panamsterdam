@@ -7,4 +7,3 @@ plotly
 prophet
 fbprophet
 scipy
-PIL
