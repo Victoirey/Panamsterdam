@@ -4,8 +4,4 @@ pandas
 numpy 
 matplotlib 
 seaborn
-plotly
-plotly.express
-pystan==2.19.1.1
-fbprophet==0.7.1
-prophet==0.7.1
+
