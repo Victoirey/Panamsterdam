@@ -7,16 +7,9 @@ import matplotlib as mpl
 from scipy import stats
 from PIL import Image
 import streamlit.components.v1 as components
-import plotly.express as px
-import pystan
-from fbprophet import Prophet
+from prophet import Prophet
 from fbprophet.plot import plot_plotly, plot_components_plotly
 import plotly.offline as py
-import plotly.io as pio
-import plotly.offline as py
-import plotly
-import plotly.graph_objs as go
-py.init_notebook_mode()
 
 st.set_page_config(page_title="#panamsterdam", page_icon=":bike:", layout="wide")
 
