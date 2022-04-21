@@ -20,6 +20,7 @@ st.set_page_config(page_title="#panamsterdam", page_icon=":bike:", layout="wide"
 ############### SIDEBAR #######################################################
 ###############################################################################
 st.sidebar.subheader("The bike revolution in Paris \n en route to #panamsterdam")
+page0 = "Did you know?"
 page1 = "Executive summary"
 page2 = "Infrastructure overview"
 page3 = "Traffic overview"
@@ -28,7 +29,7 @@ page5 = "Correlation between variables"
 page6 = "Users' perception"
 page7 = "Is Paris municipality giving itself the means to achieve its ambitions?"
 
-pages = [page1, page2, page3, page4, page5, page6, page7]
+pages = [page0, page1, page2, page3, page4, page5, page6, page7]
 select_page = st.sidebar.radio("", pages)
 
 st.sidebar.write(" ") 
@@ -43,6 +44,20 @@ st.sidebar.write(" ")
 st.sidebar.write("Olivier Masson " "\n" "[Linkedin](https://www.linkedin.com/in/oliviermasson/) "
 "\n\n" "Victoire Rey " "\n" "[Linkedin](https://www.linkedin.com/in/victoire-rey/) "
 "\n\n" "Final Project - Data Analytics Bootcamp" "\n\n" "Apr-22")
+
+
+###############################################################################
+############### PAGE 0 - DID YOU KNOW?     ####################################
+###############################################################################
+if select_page == page0:
+    st.markdown(
+    "<h1 style='text-align: center'>"
+    "<strong>The bike revolution in Paris (2018-2024):</strong>"
+    "<br><span style='font-size: smaller'>en route to #panamsterdam</span>"
+    "</h1>", unsafe_allow_html=True)
+    st.subheader("Did you know?")
+    st.markdown("")
+
 
 
 ###############################################################################
