@@ -52,13 +52,14 @@ st.sidebar.write("Olivier Masson " "\n" "[Linkedin](https://www.linkedin.com/in/
 if select_page == page0:
     st.markdown(
     "<h1 style='text-align: center'>"
-    "<strong>DId you know...</strong>"
+    "<strong>Did you know...</strong>"
     "<br><span style='font-size: smaller'>en route to #panamsterdam</span>"
     "</h1>", unsafe_allow_html=True)
     st.subheader("...the bike revolution has already started !")
-    st.markdown("100k riders everyday, for commute or leisure..." 
-                "\n\n" "18% of annual bike usage growth for the past 3 years" "\n\n"
-                "An average of 3 bike accidents per day" "\n\n" "Cycling paths can't keep up, with a CAGR growth of 3%."
+    st.markdown("100k Parisians ride everyday for commute or leisure..." 
+                "\n\n" "Over 20% of bike usage CAGR since the COVID pandemic." "\n\n"
+                "n\n" "Cycling paths can't keep up, with a CAGR growth of only 3%." "\n\n"
+                "An average of 3 bike accidents per day (and 1,9 victims per accident)." 
                 )
 
 
