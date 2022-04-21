@@ -9,7 +9,7 @@ from PIL import Image
 import streamlit.components.v1 as components
 import plotly.express as px
 import pystan
-import prophet
+import Prophet
 import fbprophet
 from prophet import Prophet
 from fbprophet.plot import plot_plotly, plot_components_plotly
