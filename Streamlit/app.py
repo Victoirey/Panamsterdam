@@ -7,6 +7,8 @@ import matplotlib as mpl
 from scipy import stats
 from PIL import Image
 import streamlit.components.v1 as components
+import plotly.express as px
+from prophet import Prophet
 
 
 st.set_page_config(page_title="#panamsterdam", page_icon=":bike:", layout="wide")
