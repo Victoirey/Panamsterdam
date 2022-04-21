@@ -1,4 +1,3 @@
-pip
 streamlit 
 pandas 
 numpy 
