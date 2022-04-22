@@ -78,8 +78,8 @@ We present final forecast in a plotly graph, as well as components of the time s
 
 ## 06 - Machine Learning
 
-We decided to run a TPOT Classifier to perform the search over the best marchine learning model for modelling accidents.
-We were looking for a correct model to predict the accident class (unharmed or with slight injury vs. hospitalized injured and killed)
+We decided to run a TPOT Classifier to perform the search over the best marchine learning model for modelling accidents gravity.
+We were looking for a correct model to predict the accident class, focusing on the main gravity of accidents: unharmed vs. slight injury (excludint hospitalized injured and killed people as they represent c.100 person out of 3800)
 
 Best model has an accuracy of 69% on train data and 68% on test data:
 exported_pipeline = make_pipeline(
