@@ -103,7 +103,7 @@ The appropriate graphs were prepared on Tableau and plotly.
 
 The Tableau story can be visited here:
 
-[Tableau story](xx)
+[Tableau story](<https://public.tableau.com/app/profile/masson8212/viz/Panamsterdam_finalstory/FinalPresentation?publish=yes>)
 
 
 ## Conclusions
