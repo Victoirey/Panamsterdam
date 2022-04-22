@@ -76,7 +76,7 @@ y(t) = g(t) + s(t) + h(t) + e(t)
 We present final forecast in a plotly graph, as well as components of the time series. 
 
 
-## 06 - Machine Learning
+## 04 - Machine Learning
 
 We decided to run a TPOT Classifier to perform the search over the best marchine learning model for modelling accidents gravity.
 We were looking for a correct model to predict the accident class, focusing on the main gravity of accidents: unharmed vs. slight injury (excludint hospitalized injured and killed people as they represent c.100 person out of 3800)
@@ -89,7 +89,7 @@ exported_pipeline = make_pipeline(
 
 
 
-## 07 - EDA
+## 05 - EDA
 
 Exploratory Data Analysis was divided into two parts:
 
@@ -99,7 +99,7 @@ Exploratory Data Analysis was divided into two parts:
 The appropriate graphs were prepared on Tableau and plotly.
 
 
-## 08 - Tableau Dashboard
+## 06 - Tableau Dashboard
 
 The Tableau story can be visited here:
 
