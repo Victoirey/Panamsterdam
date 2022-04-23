@@ -6,9 +6,13 @@ THE PARIS BIKE REVOLUTION (2018-2025)
 
 ## Project Description
 
+The project goal was to prepare a descriptive and prospective analysis on bike riding usage in Paris, based on publicly available data sources.
+We used a number of data analytics tools to bring the project to fruition:
+-Main programming language: Python
+-IDEs: Jupyter, VisualStudio
+-Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit Learn, Transformers (NLP)...
+-Other: Excel, PowerBI, Tableau...
 
-
-xx
 
 ## Workflow
 
