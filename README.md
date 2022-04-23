@@ -31,21 +31,24 @@ xx
 
 ### Counter & Infrastructure
 
-The counter data and cycling network were collected using <https://opendata.paris.fr>.  
+The counter data and cycling network were collected using:
+<https://www.data.gouv.fr/fr/datasets/comptage-velo-historique-donnees-compteurs-et-sites-de-comptage/>
+<https://www.data.gouv.fr/fr/datasets/plan-de-voirie-pistes-cyclables-et-couloirs-de-bus/>
+
 Data are provided at counter level, on an hourly basis
 
 ### Traffic injuries
 
-Accidents data were collected using <https://data.gouv.fr>.  
+Accidents data were collected using <https://www.data.gouv.fr/fr/datasets/bases-de-donnees-annuelles-des-accidents-corporels-de-la-circulation-routiere-annees-de-2005-a-2020/>.  
 Data are provided at accident level, with detailed information on the characteristics of accident (location, gravity, number of peoples involved etc.).
 
 ### Weather
 
-Meteo data were collected using <https://public.opendatasoft.com> taking the closer to Paris location (Orly).
+Meteo data were collected using <https://public.opendatasoft.com/explore/dataset/donnees-synop-essentielles-omm/export/?q.timerange.date=date:%5B2017-12-31T23:00:00Z+TO+2022-04-18T21:59:59Z%5D&q=paris&refine.nom=ORLY> taking the closer to Paris location (Orly).
 
 ### Qualitative data 
 
-Corpus of more than 3900 comments made by parisian bike users regarding their daily riding experience in the city. Collected from <https://opendata.parlons-velo.fr>.
+Corpus of more than 3900 comments made by parisian bike users regarding their daily riding experience in the city. Collected from <https://opendata.parlons-velo.fr/datasets/75056.zip>.
 
 
 ## 02 - Data Cleaning
