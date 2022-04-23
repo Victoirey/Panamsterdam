@@ -76,7 +76,17 @@ y(t) = g(t) + s(t) + h(t) + e(t)
 We present final forecast in a plotly graph, as well as components of the time series. 
 
 
-## 04 - Machine Learning
+# 04 - EDA
+
+Exploratory Data Analysis was divided into two parts:
+
+- firstly, the historical data were analysed and compared
+- secondly, the results of Time Series with the forecast for 2023-2024 were analysed.
+
+The appropriate graphs were prepared on Tableau and plotly.
+
+
+## 05 - Machine Learning
 
 We decided to run a TPOT Classifier to perform the search over the best marchine learning model for modelling accidents gravity.
 We were looking for a correct model to predict the accident class, focusing on the main gravity of accidents: unharmed vs. slight injury (excludint hospitalized injured and killed people as they represent c.100 person out of 3800)
@@ -86,17 +96,6 @@ exported_pipeline = make_pipeline(
     VarianceThreshold(threshold=0.01),
     DecisionTreeClassifier(criterion="entropy", max_depth=7, 
                            min_samples_leaf=16, min_samples_split=15))
-
-
-
-## 05 - EDA
-
-Exploratory Data Analysis was divided into two parts:
-
-- firstly, the historical data were analysed and compared
-- secondly, the results of Time Series with the forecast for 2023-2024 were analysed.
-
-The appropriate graphs were prepared on Tableau and plotly.
 
 
 ## 06 - Tableau Dashboard
