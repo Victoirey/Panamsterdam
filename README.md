@@ -8,10 +8,15 @@ THE PARIS BIKE REVOLUTION (2018-2025)
 
 The project goal was to prepare a descriptive and prospective analysis on bike riding usage in Paris, based on publicly available data sources.
 We used a number of data analytics tools to bring the project to fruition:
+
 -Main programming language: Python
+
 -IDEs: Jupyter, VisualStudio
+
 -Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit Learn, Transformers (NLP)...
+
 -Other: Excel, PowerBI, Tableau...
+
 
 
 ## Workflow
@@ -43,7 +48,8 @@ Data are provided at counter level, on an hourly basis
 
 ### Traffic injuries
 
-Accidents data were collected using <https://www.data.gouv.fr/fr/datasets/bases-de-donnees-annuelles-des-accidents-corporels-de-la-circulation-routiere-annees-de-2005-a-2020/>.  
+Accidents data were collected using <https://www.data.gouv.fr/fr/datasets/bases-de-donnees-annuelles-des-accidents-corporels-de-la-circulation-routiere-annees-de-2005-a-2020/>
+ 
 Data are provided at accident level, with detailed information on the characteristics of accident (location, gravity, number of peoples involved etc.).
 
 ### Weather
