@@ -79,7 +79,7 @@ y(t) = g(t) + s(t) + h(t) + e(t)
 We present final forecast in a plotly graph, as well as components of the time series. 
 
 
-# 04 - EDA
+## 04 - EDA
 
 Exploratory Data Analysis was divided into two parts:
 
